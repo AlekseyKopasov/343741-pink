@@ -10,7 +10,7 @@
       <div class="main-header__wrapper">
         <a class="logo main-header__logo">Pink</a>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle">X</button>
+          <button class="main-navigation__toggle" title="Главное меню"></button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__item-link">Главная</a>
@@ -58,9 +58,8 @@
       </section>
 
       <section class="advantages">
-        <h2 class="advantages-title">Устали от серости мегаполиса?
-          <span class="advantages-subtitle">Нам есть, что вам предложить!</span>
-        </h2>
+        <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
+        <span class="advantages__subtitle">Нам есть, что вам предложить!</span>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__item-title">Поднимает настроение</h3>
@@ -75,46 +74,46 @@
               <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages-image" src="http://placehold.it/150x100" alt="alt">
+          <img class="advantages__image" src="http://placehold.it/150x100" alt="alt">
       </section>
 
       <section class="reviews">
         <div class="reviews__slider">
-          <div class="reviews__slider-content">
+          <div class="reviews__slider-content slider-content">
             <h2 class="slider-content__author">Николай
             Петров</h2>
-            <p class="slider-content__review">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="slider-content__recall">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </div>
           <div class="reviews__slider-content">
             <h2 class="slider-content__author">Николай
             Петров</h2>
-            <p class="slider-content__review">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="slider-content__recall">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </div>
           <div class="reviews__slider-content">
             <h2 class="slider-content__author">Николай
             Петров</h2>
-            <p class="slider-content__review">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="slider-content__recall">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </div>
         </div>
-        <div class="slider__dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+        <ul class="slider__dots">
+          <li class="slider__dot"></li>
+          <li class="slider__dot"></li>
+          <li class="slider__dot"></li>
+        </ul>
       </section>
 
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-          <div class="slider__price-table">
-            <table class="price__table">
-              <thead class="table-header">
+          <div class="slider__price-table price-table">
+            <table class="price-table__table">
+              <thead class="price-table__header table-header">
                 <tr>
                   <th class="table-header__tariff">Base</th>
                   <th class="table-header__tariff">Стандарт</th>
                   <th class="table-header__tariff">Unlim</th>
                 </tr>
               </thead>
-              <tbody class="table-content">
+              <tbody class="price-table__content table-content">
                 <tr>
                   <td class="table-content__categories">Розовый фильтр</td>
                   <td class="table-content__categories">Розовый фильтр</td>
@@ -133,30 +132,30 @@
               </tbody>
             </table>
           </div>
-        <div class="slider__dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+          <ul class="slider__dots">
+            <li class="slider__dot"></li>
+            <li class="slider__dot"></li>
+            <li class="slider__dot"></li>
+          </ul>
       </section>
 
       <footer class="main-footer">
         <section class="contacts">
-          <h2 class="contacts-headline">Остались вопросы? Свяжитесь с нами!</h2>
-          <div class="contacts-phone">
-            <h3 class="contacts-phone__title">Звоните:</h3>
-            <a class="contacts-phone__number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <h2 class="contacts__headline">Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="contacts__phone">
+            <h3 class="contacts__phone--title">Звоните:</h3>
+            <a class="contacts__phone--number" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts-mail">
-            <h3 class="contacts-mail__title">Пишите:</h3>
-            <a class="contacts-mail__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <div class="contacts__mail">
+            <h3 class="contacts__mail--title">Пишите:</h3>
+            <a class="contacts__mail--address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts-address">
-            <h3 class="contacts-address__title">Приезжайте в гости:</h3>
-            <a class="contacts-address__description">ул. Большая Конюшенная, 19/8</a>
+          <div class="contacts__address">
+            <h3 class="contacts__address--title">Приезжайте в гости:</h3>
+            <a class="contacts__address--description">ул. Большая Конюшенная, 19/8</a>
           </div>
-          <div class="contacts-map">
-            <img class="contacts-map__image" src="http://placehold.it/150x100" alt="alt">
+          <div class="contact__map">
+            <img class="contacts__map--image" src="http://placehold.it/150x100" alt="alt">
           </div>
         </section>
       </footer>
