@@ -1,0 +1,12 @@
+// 1. Normalize
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+// 1. Variables and Mixins
+@import "common/variables";
+@import "common/mixins";
+// 3. Base stuff
+@import "common/helpers";
+@import "common/fonts";
+@import "common/general";
+// 5. Components
+@import "components/test";
