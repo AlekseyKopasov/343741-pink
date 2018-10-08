@@ -1,0 +1,48 @@
+
+.contacts__headline {
+  padding-bottom: 40px;
+  font-family: "OpenSans-Light", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $grey-blue;
+  text-align: center;
+}
+
+.contacts__phone-title,
+.contacts__mail-title,
+.contacts__address-title {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.contacts__phone-number,
+.contacts__mail-address,
+.contacts__address-description {
+  display: block;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "OpenSans-Light", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $pink-color;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__address {
+  padding-bottom: 40px;
+}
+
+.contacts__map {
+  height: 200px;
+  overflow: hidden;
+}

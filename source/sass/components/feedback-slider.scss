@@ -1,4 +1,6 @@
 .feedback-slider {
+  width: 320px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -40,8 +42,8 @@
 .feedback-slider__dots {
   display: flex;
   justify-content: center;
-  @include list-reset();
 
+  @include list-reset();
   padding-bottom: 60px;
 }
 
@@ -54,18 +56,19 @@
 }
 
 .feedback-slider__indicator {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin: 0;
   padding: 0;
-  border: 2px solid transparent;
+  vertical-align: middle;
+  border: 3px solid transparent;
   border-radius: 50%;
   background-color: #bec2c7;
 }
 
 .feedback-slider__indicator--current {
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
   background: transparent;
-  border: 2px solid #000000;
+  border: 3px solid #000000;
 }

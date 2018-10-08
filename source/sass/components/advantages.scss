@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -33,6 +36,7 @@
   flex-direction: column;
   position: relative;
   width: 320px;
+
   @include list-reset();
   padding-left: 20px;
   padding-right: 20px;
@@ -51,17 +55,6 @@
     background-image: url("../../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    right: 0;
-    width: 100%;
-    height: 50px;
-    background-color: $grey;
-    transform: skew(-5deg) rotate(-5deg);
   }
 }
 

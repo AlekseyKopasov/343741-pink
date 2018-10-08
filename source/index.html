@@ -7,7 +7,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
 
-  <body>
+  <body class="page">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="logo main-header__logo">
@@ -93,17 +93,17 @@
           <div class="feedback-slider__content feedback-slider__content--current">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="feedback-slider__content">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="feedback-slider__content">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
         <ul class="feedback-slider__dots">
@@ -125,9 +125,15 @@
             <table class="price-table__table">
               <thead class="price-table__header">
                 <tr>
-                  <th class="price-table__tariff">Base</th>
-                  <th class="price-table__tariff">Стандарт</th>
-                  <th class="price-table__tariff">Unlim</th>
+                  <th class="price-table__tariff">Base
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
+                  <th class="price-table__tariff price-table__tariff--current">Стандарт
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
+                  <th class="price-table__tariff">Unlim
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
                 </tr>
               </thead>
               <tbody class="price-table__content">
@@ -154,7 +160,7 @@
               <button class="price-table__indicator" aria-label="Тариф Base"></button>
             </li>
             <li class="price-table__dot">
-              <button class="price-table__indicator" aria-label="Тариф Стандарт"></button>
+              <button class="price-table__indicator price-table__indicator--current" aria-label="Тариф Стандарт"></button>
             </li>
             <li class="price-table__dot">
               <button class="price-table__indicator" aria-label="Тариф Unlim"></button>
@@ -178,7 +184,7 @@
             <a class="contacts__address-description">ул. Большая Конюшенная, 19/8</a>
           </div>
           <div class="contacts__map">
-            <img class="contacts__map-image" src="http://placehold.it/150x100" alt="alt">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
           </div>
         </section>
       </footer>

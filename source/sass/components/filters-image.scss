@@ -1,0 +1,194 @@
+.filters-image {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.filters-image__headline,
+.filters-image__sub-headline {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.filters-image__sub-headline {
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.filters-image__wrapper {
+  padding: 20px;
+  background-color: $grey;
+}
+
+.filters-image__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-effects__controls {
+  width: 240px;
+  margin-bottom: 40px;
+}
+
+.image-effects__field {
+  margin: 0;
+  margin-top: 25px;
+}
+
+.image-effects__radio {
+  display: none;
+}
+
+.image-effects__crop-title,
+.image-effects__fill-title,
+.image-effects__contrast-title {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.image-effects__crop-title {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.image-effects__fill-title {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.image-effects__contrast-title {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.image-effects__range--current {
+  display: block;
+}
+
+// Стили для ползунка
+.image-effects__range {
+  display: none;
+  appearance: none;
+  width: 100%;
+}
+
+.image-effects__range::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -6px;
+  height: 12px;
+  width: 12px;
+  background: $white;
+  cursor: pointer;
+  border: 2px solid $pink-color;
+  border-radius: 50%;
+}
+
+.image-effects__range::-ms-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+/* Тоже самое для Firefox */
+.image-effects__range::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background: $white;
+  cursor: pointer;
+  border: 2px solid $pink-color;
+  border-radius: 50%;
+}
+
+/* Тоже самое для IE */
+.image-effects__range::-ms-thumb {
+  height: 12px;
+  width: 12px;
+  background: $white;
+  cursor: pointer;
+  border: 2px solid $pink-color;
+  border-radius: 50%;
+}
+
+//Стили для полосы диапазона
+.image-effects__range::-webkit-slider-runnable-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-blue;
+}
+
+.image-effects__range::-moz-range-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-blue;
+}
+
+.image-effects__range::-ms-fill-lower {
+  background: $dark-blue;
+}
+
+.image-effects__range:focus::-ms-fill-lower {
+  background: $dark-blue;
+}
+
+.image-effects__range::-ms-fill-upper {
+  background: $dark-blue;
+}
+
+.image-effects__range:focus::-ms-fill-upper {
+  background: $dark-blue;
+}
+
+.filters-image__content {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.image-effects__buttons {
+  width: 320px;
+  padding: 0 20px;
+  padding-top: 40px;
+  border-top: 1px solid #cccccc;
+}
+
+.image-effects__button {
+  width: 280px;
+  padding: 17px 90px;
+  margin-bottom: 12px;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 3px solid $pink-color;
+  color: $pink-color;
+  border-radius: 30px;
+  background-color: $white;
+}
+
+.image-effects__button--reset {
+  border: 3px solid #dddfe0;
+  color: #dddfe0;
+  background-color: $grey;
+}
