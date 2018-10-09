@@ -10,7 +10,6 @@
 @import "common/general";
 // 5. Components
 //--Page index.html
-@import "components/page";
 @import "components/main-header";
 @import "components/main-navigation";
 @import "components/download-app";
@@ -23,6 +22,7 @@
 @import "components/page-headline";
 @import "components/user-photo";
 @import "components/filters-image";
+@import "components/image-effects";
 @import "components/page-footer";
 //--Page form.html
 @import "components/contest-form";

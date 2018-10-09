@@ -11,7 +11,7 @@
   padding-bottom: 40px;
 }
 
-.page-footer__social-links {
+.page-footer__socials {
   width: 180px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   padding-bottom: 40px;
 }
 
-.social-links__link {
+.page-footer__social-link {
   display: block;
   border-radius: 50%;
   width: 50px;
@@ -28,13 +28,13 @@
   border: 3px solid #cccccc;
 }
 
-.copyright {
+.page-footer__copyright {
   display: flex;
   align-items: center;
   padding-bottom: 40px;
 }
 
-.copyright__text {
+.page-footer__copyright-text {
   padding-right: 15px;
   line-height: 18px;
 }
