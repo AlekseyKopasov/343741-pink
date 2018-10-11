@@ -1,0 +1,155 @@
+.contest-form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contest-form__headline {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $pink-color;
+  text-align: center;
+}
+
+.contest-form__headline--main {
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  color: $dark-blue;
+}
+
+.contest-form__field {
+  border: none;
+}
+
+.contest-form__field--achievements {
+  margin-bottom: 40px;
+}
+
+.contest-form__field--achievements,
+.contest-form__field--app {
+  background-color: $grey;
+}
+
+.contest-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__wrapper--achievements,
+.contest-form__wrapper--app {
+  position: relative;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    background-color: $white;
+  }
+}
+
+.contest-form__wrapper--app::after {
+  border-radius: 50%;
+}
+
+.contest-form__label {
+  width: 100%;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: $pink-color;
+  padding-bottom: 12px;
+}
+
+.contest-form__label--achievements,
+.contest-form__label--app {
+  padding-left: 70px;
+  padding-right: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: none;
+  color: $dark-blue;
+}
+
+.contest-form__input {
+  width: 100%;
+  margin-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+}
+
+.contest-form__input--achievements,
+.contest-form__input--app {
+  display: none;
+}
+
+.contest-form__headline--textarea {
+  padding-bottom: 20px;
+}
+
+.contest-form__field--textarea {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contest-form__text {
+  width: 280px;
+  min-height: 200px;
+  padding: 22px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contest-form__footer {
+  width: 320px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contest-form__button {
+  margin-bottom: 45px;
+  padding: 16px 47px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  background-color: #2aab6d;
+  border-radius: 3px;
+  border: none;
+}
+
+.contest-form__notes {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__asterisk {
+  color: $pink-color;
+}

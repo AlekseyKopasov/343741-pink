@@ -2,13 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
 
-  <body>
+  <body class="page">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="logo main-header__logo">Pink</a>
+        <a class="logo main-header__logo">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75" height="22" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+            <g>
+              <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+              <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+              <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+              <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+            </g>
+          </svg>
+        </a>
         <nav class="main-navigation">
           <button class="main-navigation__toggle" title="Главное меню"></button>
           <ul class="main-navigation__list">
@@ -30,31 +41,32 @@
     </header>
 
     <main class="main-content">
-      <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
       <section class="download-app">
         <h2 class="download-app__headline visually-hidden">Скачать приложение</h2>
         <div class="download-app__intro">
-          <img class="intro-image" src="http://placehold.it/150x100" alt="alt">
+          <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
         </div>
-        <button class="download-app__button">Скачать приложение</button>
+      <div class="download-app__wrappers">
+          <button class="download-app__button">Скачать приложение</button>
         <ul class="download-app__list">
           <li class="download-app__item">
-            <a class="download-app__link" href="https://itunes.apple.com" target="_blank">
+            <a class="download-app__link download-app__link--apple" href="https://itunes.apple.com" target="_blank">
               <span class="visually-hidden">Скачать приложение в iTunes</span>
             </a>
           </li>
           <li class="download-app__item">
-            <a class="download-app__link" href="https://play.google.com/store/apps?hl=ru" target="_blank">
+            <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps?hl=ru" target="_blank">
               <span class="visually-hidden">Скачать приложение в Google Play</span>
             </a>
           </li>
           <li class="download-app__item">
-            <a class="download-app__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank">
+            <a class="download-app__link download-app__link--microsoft" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank">
               <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
             </a>
           </li>
         </ul>
         <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
       </section>
 
       <section class="advantages">
@@ -74,30 +86,29 @@
               <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image" src="http://placehold.it/150x100" alt="alt">
       </section>
 
       <section class="feedback-slider">
         <div class="feedback-slider__feedbacks">
-          <div class="feedback-slider__content">
+          <div class="feedback-slider__content feedback-slider__content--current">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="feedback-slider__content">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="feedback-slider__content">
             <h2 class="feedback-slider__author">Николай
             Петров</h2>
-            <p class="feedback-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
         <ul class="feedback-slider__dots">
           <li class="feedback-slider__dot">
-            <button class="feedback-slider__indicator" aria-label="Первый отзыв"></button>
+            <button class="feedback-slider__indicator feedback-slider__indicator--current" aria-label="Первый отзыв"></button>
           </li>
           <li class="feedback-slider__dot">
             <button class="feedback-slider__indicator" aria-label="Второй отзыв"></button>
@@ -114,9 +125,15 @@
             <table class="price-table__table">
               <thead class="price-table__header">
                 <tr>
-                  <th class="price-table__tariff">Base</th>
-                  <th class="price-table__tariff">Стандарт</th>
-                  <th class="price-table__tariff">Unlim</th>
+                  <th class="price-table__tariff">Base
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
+                  <th class="price-table__tariff price-table__tariff--current">Стандарт
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
+                  <th class="price-table__tariff">Unlim
+                  <span class="price-table__price">3,99 usd</span>
+                </th>
                 </tr>
               </thead>
               <tbody class="price-table__content">
@@ -143,7 +160,7 @@
               <button class="price-table__indicator" aria-label="Тариф Base"></button>
             </li>
             <li class="price-table__dot">
-              <button class="price-table__indicator" aria-label="Тариф Стандарт"></button>
+              <button class="price-table__indicator price-table__indicator--current" aria-label="Тариф Стандарт"></button>
             </li>
             <li class="price-table__dot">
               <button class="price-table__indicator" aria-label="Тариф Unlim"></button>
@@ -155,19 +172,19 @@
         <section class="contacts">
           <h2 class="contacts__headline">Остались вопросы? Свяжитесь с нами!</h2>
           <div class="contacts__phone">
-            <h3 class="contacts__phone-title">Звоните:</h3>
-            <a class="contacts__phone-number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <h3 class="contacts__title">Звоните:</h3>
+            <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__mail">
-            <h3 class="contacts__mail-title">Пишите:</h3>
-            <a class="contacts__mail-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <h3 class="contacts__title">Пишите:</h3>
+            <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__address">
-            <h3 class="contacts__address-title">Приезжайте в гости:</h3>
-            <a class="contacts__address-description">ул. Большая Конюшенная, 19/8</a>
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <a class="contacts__text">ул. Большая Конюшенная, 19/8</a>
           </div>
           <div class="contacts__map">
-            <img class="contacts__map-image" src="http://placehold.it/150x100" alt="alt">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
           </div>
         </section>
       </footer>
