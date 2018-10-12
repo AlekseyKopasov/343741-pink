@@ -10,12 +10,23 @@
   background-repeat: no-repeat;
   background-position: top center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    flex-direction: row-reverse;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
+  }
 }
 
 .download-app__intro {
   width: 320px;
   height: 396px;
   margin-bottom: auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 620px;
+  }
 }
 
 .download-app__wrappers {
@@ -25,6 +36,27 @@
   width: 100%;
   padding: 28px 20px 37px 20px;
   background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.download-app__slogan {
+  display: none; // Надо спрятать заголовок доступно
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
 .download-app__button {

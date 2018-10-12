@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 }
 
 .feedback-slider__feedbacks {
@@ -19,9 +23,14 @@
 
 .feedback-slider__content--current {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
-.feedback-slider__author {
+.feedback-slider__author-name {
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
@@ -30,6 +39,15 @@
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.feedback-slider__author-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 .feedback-slider__text {

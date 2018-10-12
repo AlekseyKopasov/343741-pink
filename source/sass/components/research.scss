@@ -1,0 +1,41 @@
+.research {
+  display: none;
+  width: 660px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.research__wrapper {
+  width: 320px;
+  min-height: 280px;
+}
+
+.research__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  padding-top: 40px;
+  color: #000000;
+}
+
+.research__description {
+  width: 310px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.research__link {
+  color: $pink-color;
+}

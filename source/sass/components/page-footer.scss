@@ -7,6 +7,19 @@
   align-items: center;
 }
 
+.page-footer--main-page {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   padding-bottom: 40px;
 }
