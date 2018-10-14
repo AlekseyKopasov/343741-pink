@@ -1,10 +1,18 @@
 .modal {
   display: none;
-  background-color: $white;
+  background-color: $white-color;
   width: 320px;
   text-align: center;
   box-shadow: 0 0 15px -5px #000000,
     0 5px 5px -5px #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 780px;
+  }
 }
 
 .modal__headline {
@@ -12,10 +20,11 @@
   padding: 0;
   padding-top: 45px;
   padding-bottom: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include open-sans-bold();
+
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
   color: #000000;
 }
 
@@ -28,19 +37,20 @@
 .modal__footer {
   width: 320px;
   padding: 50px 22px;
-  background-color: $grey;
+  background-color: $grey-color;
 }
 
 .modal__success-button,
 .modal__failure-button {
   width: 100%;
   padding: 16px 47px;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include open-sans-bold();
+
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
   text-transform: uppercase;
-  color: $white;
+  color: $white-color;
   background-color: #2aab6d;
   border-radius: 3px;
   border: none;

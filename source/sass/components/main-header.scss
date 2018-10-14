@@ -1,21 +1,35 @@
 .main-header {
   width: 320px;
   margin: 0 auto;
-  color: $white;
-  background: $grey-blue;
+  color: $white-color;
+  background-color: $grey-blue-color;
 
   @media (min-width: $tablet-width) {
     width: 660px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 72px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-header__wrapper {
-  // width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    flex-direction: row;
+  }
 }
 
 .main-header__logo {

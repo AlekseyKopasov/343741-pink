@@ -1,30 +1,83 @@
 .user-photo {
   margin-bottom: 50px;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .user-photo__headline {
-  margin: 0;
+  margin: 0 auto;
   padding: 55px 40px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: $grey-blue;
+  color: $grey-blue-color;
   text-align: center;
+}
+
+.user-photo__image--panorama {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.user-photo__posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
 }
 
 .user-photo__post {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .user-photo__content {
   width: 280px;
-  background-color: $grey;
+  background-color: $grey-color;
   margin: 0 20px;
   padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.user-photo__content--panorama {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .user-photo__title,
@@ -37,12 +90,12 @@
 .user-photo__title {
   font-size: 14px;
   line-height: 24px;
-  color: $dark-blue;
+  color: $dark-blue-color;
 }
 
 .user-photo__date {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
+  @include open-sans-light();
+
   font-size: 14px;
   line-height: 24px;
 }
@@ -57,6 +110,10 @@
   height: 14px;
   border: none;
   background-color: $pink-color;
+}
+
+.user-photo__rating {
+  margin-top: auto;
 }
 
 .user-photo__raiting-count {
