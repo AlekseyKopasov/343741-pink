@@ -1,18 +1,31 @@
 .price-table {
   width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 90px;
   margin-bottom: 40px;
-  background-color: $grey;
+  background-color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .price-table__wrapper {
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
   padding-bottom: 40px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    overflow: visible;
+  }
 }
 
 .price-table__table {
@@ -20,46 +33,102 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid #e5e5e5;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 20px;
+    left: -50%;
+    transform: translateX(50%);
+  }
 }
 
 .price-table__header {
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include open-sans-bold();
+
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  color: $white;
+  color: $white-color;
   text-transform: uppercase;
-  background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .price-table__tariff {
   width: 280px;
   padding-top: 25px;
   padding-bottom: 22px;
-  border-left: 1px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  background-color: $dark-blue-color;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+  }
+}
+
+.price-table__tariff--hidden {
+  display: none;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .price-table__price {
   display: block;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include open-sans-light();
+
   font-size: 24px;
   line-height: 30px;
-  font-weight: 300;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .price-table__category {
   padding: 23px 17px 23px 23px;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include open-sans-regular();
+
   font-size: 14px;
   line-height: 30px;
-  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
-  background-color: $white;
-  border: 1px solid #e5e5e5;
+  background-color: $white-color;
+  border: 2px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 15px;
+  }
+}
+
+.price-table__category-name {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price-table__category--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @include open-sans-regular();
+
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+  }
 }
 
 .price-table__dots {
@@ -69,6 +138,10 @@
 
   @include list-reset();
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .price-table__dot {

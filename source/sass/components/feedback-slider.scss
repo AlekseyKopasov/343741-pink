@@ -1,8 +1,13 @@
 .feedback-slider {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 }
 
 .feedback-slider__feedbacks {
@@ -19,17 +24,32 @@
 
 .feedback-slider__content--current {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
-.feedback-slider__author {
+.feedback-slider__author-name {
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include open-sans-bold();
+
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
   color: #000000;
+}
+
+.feedback-slider__author-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 .feedback-slider__text {
@@ -37,6 +57,26 @@
   padding: 0;
   padding-bottom: 25px;
   line-height: 30px;
+}
+
+.feedback-slider__button {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 42px;
+  border: none;
+  background-color: transparent;
+}
+
+.feedback-slider__button--next {
+  background-image: url("../../icon-review-arrow-left.svg");
+}
+
+.feedback-slider__button--prev {
+  left: 100px;
+  background-image: url("../../icon-review-arrow-right.svg");
 }
 
 .feedback-slider__dots {
