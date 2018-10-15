@@ -25,6 +25,8 @@
 }
 
 .contacts__headline {
+  margin: 0;
+  padding: 0;
   padding-bottom: 40px;
 
   @include open-sans-light();

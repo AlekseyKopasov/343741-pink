@@ -12,7 +12,7 @@
   width: 22px;
   height: 22px;
   position: absolute;
-  top: -18px;
+  top: -22px;
   right: 20px;
   border: none;
   background: transparent;
@@ -22,9 +22,10 @@
     content: "";
     position: absolute;
     top: -18px;
-    right: 0;
+    right: -4px;
     height: 5px;
     width: 30px;
+    cursor:pointer;
     background-color: $white-color;
   }
 
@@ -70,8 +71,8 @@
 .main-navigation__item-link {
   display: block;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 15px;
 
   @include open-sans-bold();
 

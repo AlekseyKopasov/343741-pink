@@ -1,11 +1,11 @@
 .price-table {
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
-  margin-bottom: 40px;
+  padding-top: 67px;
+  margin-bottom: 44px;
   background-color: $grey-color;
 
   @media (min-width: $tablet-width) {
@@ -18,9 +18,9 @@
 }
 
 .price-table__wrapper {
-  width: 100%;
+  max-width: 100%;
   padding: 0 20px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -29,7 +29,8 @@
 }
 
 .price-table__table {
-  width: 840px;
+  // width: 840px;
+  width: 252.5%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -57,14 +58,39 @@
 }
 
 .price-table__tariff {
+  // position: relative;
   width: 280px;
-  padding-top: 25px;
-  padding-bottom: 22px;
+  padding-top: 16px;
+  padding-bottom: 20px;
   border-left: 2px solid #e5e5e5;
   background-color: $dark-blue-color;
 
   @media (min-width: $tablet-width) {
     width: 25%;
+  }
+}
+
+.price-table__tariff--hit {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    z-index: 99;
+    top: 11px;
+    left: -33px;
+    padding: 0 42px;
+    text-transform: uppercase;
+
+    @include open-sans-regular();
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $white-color;
+    background-color: $pink-color;
+    transform: rotate(-45deg);
   }
 }
 
@@ -80,6 +106,7 @@
 
 .price-table__price {
   display: block;
+  padding-top: 2px;
 
   @include open-sans-light();
 
@@ -93,7 +120,9 @@
 }
 
 .price-table__category {
-  padding: 23px 17px 23px 23px;
+  position: relative;
+  padding: 14px 17px 14px 23px;
+  background-clip: padding-box;
 
   @include open-sans-regular();
 
@@ -110,11 +139,32 @@
 }
 
 .price-table__category-name {
-  display: block;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.price-table__category-status {
+  position: absolute;
+  display: block;
+  width: 31px;
+  height: 30px;
+  top: 13px;
+  right: 17px;
+  text-indent: -1000px;
+  overflow: hidden;
+  background: url(../img/icon-yes.svg) no-repeat center;
+  background-size: 31px 21px;
+}
+
+.price-table__category-status--yes {
+  background: url(../img/icon-yes.svg) no-repeat center;
+  background-size: 31px 21px;
+}
+.price-table__category-status--no {
+  background: url(../img/icon-no.svg) no-repeat center;
+  background-size: 27px 26px;
 }
 
 .price-table__category--hidden {
@@ -137,7 +187,7 @@
   width: 280px;
 
   @include list-reset();
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     display: none;
