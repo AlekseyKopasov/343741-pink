@@ -1,18 +1,17 @@
 .page-footer {
-  width: 320px;
+  display: none;
   margin: 0 auto;
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    // padding-left: 20px;
+    // padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,16 +19,61 @@
   }
 }
 
-.page-footer--main-page {
+.page-footer__map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background-color: $white-color;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center -445px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 386px;
+    margin-bottom: 30px;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-position: center -391px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-size: cover;
+  }
+}
+
+.page-footer__inner {
   display: none;
 
   @media (min-width: $tablet-width) {
+    width: 660px;
+    padding: 8px 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
 .page-footer__logo {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .page-footer__socials {
@@ -39,6 +83,11 @@
 
   @include list-reset();
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+    padding-bottom: 0; // временно для ПП
+  }
 }
 
 .page-footer__social-link {
@@ -47,12 +96,27 @@
   width: 50px;
   height: 50px;
   border: 3px solid #cccccc;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   align-items: center;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0; // временно для ПП
+  }
+}
+
+.page-footer__copyright-link {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+  }
 }
 
 .page-footer__copyright-text {

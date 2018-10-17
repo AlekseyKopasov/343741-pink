@@ -41,6 +41,11 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
 }
 
 .feedback-slider__author-info {
@@ -48,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -57,6 +62,11 @@
   padding: 0;
   padding-bottom: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+    font-size: 18px;
+  }
 }
 
 .feedback-slider__button {

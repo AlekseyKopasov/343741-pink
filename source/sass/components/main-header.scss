@@ -4,7 +4,7 @@
   background-color: $grey-blue-color;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -26,6 +26,10 @@
   align-items: center;
   margin: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 960px;
     flex-direction: row;
@@ -41,4 +45,8 @@
   margin-bottom: 27px;
   margin-left: 20px;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
 }

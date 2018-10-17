@@ -20,6 +20,7 @@
 .research__wrapper {
   width: 320px;
   min-height: 280px;
+  padding-left: 9px;
 
   @media (min-width: $desktop-width) {
     width: 50%;
@@ -29,20 +30,23 @@
 .research__title {
   @include open-sans-bold();
 
+  width: 170px;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-right: 15px;
+  // margin-left: 9px;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 55px;
+  padding-bottom: 9px;
   color: #000000;
 }
 
 .research__description {
-  width: 310px;
+  width: 300px;
   margin: 0;
+  // margin-left: 9px;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 
   @media (min-width: $desktop-width) {
     width: 510px;
@@ -50,5 +54,6 @@
 }
 
 .research__link {
+  // margin-left: 9px;
   color: $pink-color;
 }
