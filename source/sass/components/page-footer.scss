@@ -1,21 +1,16 @@
 .page-footer {
-  display: none;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    // padding-left: 20px;
-    // padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: auto;
   }
 }
 
@@ -34,7 +29,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     width: 100%;
     height: 100%;
     background: url("../img/bg-triangle-white-footer.svg");
@@ -51,7 +46,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 505px;
+    margin-bottom: 71px;
     background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-position: center -317px;
     background-size: cover;
   }
 }
@@ -61,10 +59,17 @@
 
   @media (min-width: $tablet-width) {
     width: 660px;
+    margin-bottom: 37px;
     padding: 8px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 67px;
+    padding: 0 174px;
   }
 }
 
@@ -86,7 +91,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 18px;
-    padding-bottom: 0; // временно для ПП
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -7px;
   }
 }
 
@@ -108,12 +117,11 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0; // временно для ПП
+    padding-bottom: 0;
   }
 }
 
 .page-footer__copyright-link {
-
   @media (min-width: $tablet-width) {
     padding-top: 13px;
   }
@@ -122,4 +130,9 @@
 .page-footer__copyright-text {
   padding-right: 15px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 13px;
+    font-size: 18px;
+  }
 }

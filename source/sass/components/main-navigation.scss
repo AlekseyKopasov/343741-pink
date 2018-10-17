@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 10px;
+  }
 }
 
 .main-navigation__toggle {
@@ -25,7 +30,7 @@
     right: -4px;
     height: 5px;
     width: 30px;
-    cursor:pointer;
+    cursor: pointer;
     background-color: $white-color;
   }
 
@@ -56,7 +61,7 @@
   border-bottom: 1px solid $dark-blue-color;
 
   @media (min-width: $desktop-width) {
-    width: 825px;
+    width: auto;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0;
@@ -69,6 +74,11 @@
 
   @media (min-width: $tablet-width) {
     width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 80px;
   }
 }
 
@@ -87,4 +97,11 @@
   text-transform: uppercase;
   box-shadow: 0 -1px 0 #000000,
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+    box-shadow: none;
+  }
 }

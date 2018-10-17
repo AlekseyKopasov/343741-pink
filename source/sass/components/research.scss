@@ -13,6 +13,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
     background-color: $grey-color;
   }
 }
@@ -23,7 +25,9 @@
   padding-left: 9px;
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 574px;
+    margin-right: 153px;
+    padding: 0;
   }
 }
 
@@ -34,26 +38,39 @@
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  // margin-left: 9px;
   padding: 0;
   padding-top: 55px;
   padding-bottom: 9px;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    line-height: 30px;
+  }
 }
 
 .research__description {
   width: 300px;
   margin: 0;
-  // margin-left: 9px;
   padding: 0;
   padding-bottom: 11px;
 
   @media (min-width: $desktop-width) {
-    width: 510px;
+    width: 570px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .research__link {
-  // margin-left: 9px;
   color: $pink-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
 }

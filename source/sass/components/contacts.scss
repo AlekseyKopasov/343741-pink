@@ -37,6 +37,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 56px;
+    font-size: 50px;
+    line-height: 60px;
     width: 640px;
     margin: 0 auto;
   }
@@ -68,14 +72,18 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px; //Временно
+    padding-bottom: 47px;
   }
 }
 
 .contacts__item--phone {
-
   @media (min-width: $tablet-width) {
     padding-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    padding-left: 33px;
   }
 }
 
@@ -84,15 +92,23 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 53px;
-    padding-bottom: 0; //Временно
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    padding-right: 32px;
   }
 }
 
 .contacts__item--address {
-
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     padding-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
   }
 }
 
@@ -110,6 +126,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .contacts__title--mail {
@@ -117,24 +137,28 @@
   padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0; //Временно
-    padding-bottom: 7px; //Временно
+    padding-left: 0;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
   }
 }
 
 .contacts__title--address {
-
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
   }
 }
 
 .contacts__text {
   display: block;
   width: 235px;
-  // padding-bottom: 25px;
-  // padding-left: 20px;
-  // padding-right: 20px;
 
   @include open-sans-light();
 
@@ -149,7 +173,7 @@
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0; //Временно
+    padding-right: 0;
   }
 }
 

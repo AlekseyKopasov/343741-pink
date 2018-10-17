@@ -19,10 +19,16 @@
     background-repeat: no-repeat;
     background-position: center top;
 
-      @media (min-width: $tablet-width) {
-        top: -66px;
-      }
+    @media (min-width: $tablet-width) {
+      top: -66px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: -60px;
+      background-size: 100% auto;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 44px;
     margin-bottom: 48px;
@@ -30,6 +36,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 99px;
+    padding-bottom: 30px;
   }
 }
 
@@ -64,6 +72,12 @@
     left: -310px;
     transform: translateX(50%);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    transform: translateX(0);
+    left: 0;
+  }
 }
 
 .price-table__header {
@@ -91,6 +105,12 @@
     padding-top: 12px;
     padding-bottom: 5px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 18px 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -147,6 +167,10 @@
     font-size: 18px;
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price-table__category {
@@ -165,10 +189,13 @@
   @media (min-width: $tablet-width) {
     padding: 8px 15px 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 17px 14px 23px;
+  }
 }
 
 .price-table__category-name {
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -183,22 +210,27 @@
   right: 17px;
   text-indent: -1000px;
   overflow: hidden;
-  background: url("../img/icon-yes.svg") no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 31px 21px;
 
-  @media (min-width: $tablet-width) {
-    top: 8px;
-    right: 60px;
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 50%;
+    margin-right: -18px;
   }
 }
 
 .price-table__category-status--yes {
-  background: url("../img/icon-yes.svg") no-repeat center;
+  background: url("../img/icon-yes.svg");
   background-size: 31px 21px;
+  background-repeat: no-repeat;
 }
+
 .price-table__category-status--no {
-  background: url("../img/icon-no.svg") no-repeat center;
+  background: url("../img/icon-no.svg");
   background-size: 27px 26px;
+  background-repeat: no-repeat;
 }
 
 .price-table__category--hidden {
@@ -213,6 +245,10 @@
     line-height: 30px;
     text-transform: none;
     border-width: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 

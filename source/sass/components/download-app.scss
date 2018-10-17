@@ -23,6 +23,7 @@
     width: 100%;
     min-width: 960px;
     min-height: 853px;
+    margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
@@ -34,10 +35,6 @@
   width: 320px;
   height: 396px;
   margin-bottom: auto;
-
-  @media (min-width: $tablet-width) {
-    // min-height: 620px;
-  }
 
   @media (min-width: $desktop-width) {
     min-height: 853px;
@@ -57,6 +54,10 @@
     align-items: flex-start;
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .download-app__slogan {
@@ -67,7 +68,7 @@
     width: 256px;
     margin: 0;
     padding-top: 67px;
-    padding-left: 64px;;
+    padding-left: 64px;
     padding-bottom: 30px;
 
     @include open-sans-light();
@@ -75,6 +76,15 @@
     font-size: 40px;
     line-height: 48px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 418px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    padding-left: 179px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -95,6 +105,13 @@
     width: 302px;
     margin-left: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 147px;
+    margin-bottom: 71px;
+    font-size: 21px;
+    line-height: 18px;
+  }
 }
 
 .download-app__list {
@@ -108,6 +125,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 50px;
     margin-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 195px;
+    margin-bottom: 52px;
+    padding: 0;
   }
 }
 
@@ -130,14 +153,13 @@
 
 .download-app__link--microsoft {
   background-image: url("../../img/logo-microsoft.svg");
-      background-position: 13px 9px;
+  background-position: 13px 9px;
 }
 
 .download-app__description {
   width: 320px;
   margin: 0;
-  padding: 0;
-  padding: 19px 22px 0px 22px;
+  padding: 19px 22px 0 22px;
 
   @include open-sans-light();
 
@@ -149,6 +171,10 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding: 32px 0 9px 0;
-    // margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 139px;
+    padding: 0;
   }
 }
