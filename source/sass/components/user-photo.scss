@@ -1,5 +1,6 @@
 .user-photo {
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 23px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +18,7 @@
 
 .user-photo__headline {
   margin: 0 auto;
-  padding: 55px 40px;
+  padding: 45px 35px 48px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -58,8 +59,8 @@
 .user-photo__content {
   width: 280px;
   background-color: $grey-color;
-  margin: 0 20px;
-  padding: 25px 20px;
+  padding-left: 18px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -88,6 +89,7 @@
 }
 
 .user-photo__title {
+  padding-top: 19px;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue-color;
@@ -101,11 +103,12 @@
 }
 
 .user-photo__message {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .user-photo__button {
-  margin-right: 20px;
+  margin-right: 14px;
+  padding-bottom: 8px;
   width: 14px;
   height: 14px;
   border: none;

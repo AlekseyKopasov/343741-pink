@@ -1,9 +1,8 @@
 .page-headline {
-  width: 320px;
-  height: 170px;
+  min-height: 170px;
 
   margin: 0 auto;
-  padding: 35px 20px;
+  padding: 29px 70px;
 
   @include open-sans-light();
 

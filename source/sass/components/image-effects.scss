@@ -48,6 +48,7 @@
 
 .image-effects__title--crop {
   background-image: url("../../img/icon-editor-crop.svg");
+  background-position: -6px -3px;
 }
 
 .image-effects__title--fill {
@@ -56,6 +57,7 @@
 
 .image-effects__title--contrast {
   background-image: url("../../img/icon-editor-contrast.svg");
+  background-position: 11px 6px;
 }
 
 // Стили для ползунка
@@ -83,8 +85,8 @@
 .image-effects__range::-webkit-slider-thumb {
   appearance: none;
   margin-top: -6px;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   background: $white-color;
   cursor: pointer;
   border: 2px solid $pink-color;
@@ -154,8 +156,8 @@
 
 .image-effects__buttons {
   width: 320px;
-  padding: 0 20px;
-  padding-top: 40px;
+  padding: 0 17px;
+  padding-top: 30px;
   border-top: 1px solid #cccccc;
 
   @media (min-width: $tablet-width) {
