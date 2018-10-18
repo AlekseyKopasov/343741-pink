@@ -65,12 +65,19 @@
   padding-top: 43px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
-    margin-bottom: 37px;
-    padding: 8px 20px;
-    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
-    align-items: flex-end;
+    padding: 34px 41px;
+    margin-bottom: 0;
+    //
+    //
+    //
+    // width: 660px;
+    // margin-bottom: 37px;
+    // padding: 8px 20px;
+    // justify-content: space-between;
+    // align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
