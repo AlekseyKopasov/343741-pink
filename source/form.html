@@ -44,7 +44,9 @@
       <h1 class="page-headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
       <form class="contest-form" action="https://echo.htmlacademy.ru">
-        <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
+      </h2>
         <fieldset class="contest-form__field contest-form__field--contacts">
           <legend class="visually-hidden">Персональные данные</legend>
           <div class="contest-form__wrapper">
@@ -62,7 +64,7 @@
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--achievements">
-          <h2 class="contest-form__headline">Ваши безбашенные достижения в путешествии</h2>
+          <legend class="contest-form__headline contest-form__headline--achievements">Ваши безбашенные достижения в путешествии</legend>
           <div class="contest-form__wrapper contest-form__wrapper--achievements">
             <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
             <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked>
@@ -90,19 +92,19 @@
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--address">
-          <legend class="visually-hidden">Контакты</legend>
-          <div class="contest-form__wrapper">
-            <label class="contest-form__label" for="user-contacts__phone">Номер телефона</label>
-            <input class="contest-form__input" id="user-contacts__phone" type="tel" placeholder="Номер, пожалуйста">
+          <legend class="contest-form__headline contest-form__headline--address">Контактная информация</legend>
+          <div class="contest-form__wrapper contest-form__wrapper--address">
+            <label class="contest-form__label contest-form__label--address" for="user-contacts__phone">Номер телефона</label>
+            <input class="contest-form__input contest-form__input--address" id="user-contacts__phone" type="tel" placeholder="Номер, пожалуйста">
           </div>
-          <div class="contest-form__wrapper">
-            <label class="contest-form__label"  for="user-contacts__mail">Адрес почты</label>
-            <input class="contest-form__input"  id="user-contacts__mail" type="email" placeholder="Введите почту*">
+          <div class="contest-form__wrapper  contest-form__wrapper--address">
+            <label class="contest-form__label contest-form__label--address"  for="user-contacts__mail">Адрес почты</label>
+            <input class="contest-form__input contest-form__input--address"  id="user-contacts__mail" type="email" placeholder="Введите почту*">
           </div>
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--app">
-          <h2 class="contest-form__headline">С каким приложением путешествовали?</h2>
+          <legend class="contest-form__headline contest-form__headline--app">С каким приложением путешествовали?</legend>
           <div class="contest-form__wrapper contest-form__wrapper--app">
             <label class="contest-form__label contest-form__label--app"  for="user-app__ios">Pink для iOS</label>
             <input class="contest-form__input contest-form__input--app" id="user-app__ios" type="radio" name="user-app" checked>
@@ -118,7 +120,7 @@
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--textarea">
-          <h2 class="contest-form__headline contest-form__headline--textarea">Опишите свои эмоции</h2>
+          <legend class="contest-form__headline contest-form__headline--textarea">Опишите свои эмоции</legend>
           <textarea class="contest-form__text" name="user-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
