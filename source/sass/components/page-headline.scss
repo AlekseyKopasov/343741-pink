@@ -27,10 +27,12 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    min-height: 364px;
-    padding: 0px 201px;
-    padding-top: 162px;
+    min-height: 354px;
+    padding: 5px 456px;
+    padding-top: 154px;
     min-width: 960px;
+    font-size: 45px;
+    line-height: 56px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-size: cover;
   }

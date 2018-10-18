@@ -6,7 +6,6 @@
   right: 0;
   bottom: -25px;
   padding-bottom: 28px;
-  // background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -16,14 +15,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    left: 95px;
+    top: 23px;
   }
 }
 
 .image-effects__controls--current {
-    display: block;
+  display: block;
 }
 
 .image-effects__field {
@@ -41,6 +40,11 @@
     margin-top: 0;
     padding: 25px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 385px;
+    padding: 13px 0;
+  }
 }
 
 .image-effects__radio {
@@ -55,7 +59,7 @@
   background-position: top center;
 
   @media (min-width: $tablet-width) {
-    width:40px;
+    width: 40px;
     height: 40px;
     background-size: 25px auto;
     background-position: -4px -2px;
@@ -75,6 +79,10 @@
   @media (min-width: $tablet-width) {
     background-position: 3px -3px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: 3px 4px;
+  }
 }
 
 .image-effects__title--fill {
@@ -86,27 +94,22 @@
 }
 
 .image-effects__title--contrast {
-  background-image: url("../../img/icon-editor-contrast.svg");
-  // background-repeat: no-repeat;
-  background-position: 11px 6px;
+  background-position: 10px 5px;
+  background-size: 35px auto;
 
   @media (min-width: $tablet-width) {
-    background-position: 8px 0px;
+    background-position: 8px 0;
     background-size: 18px auto;
   }
 }
 
 // Стили для ползунка
 .image-effects__range {
-  // display: none;
   appearance: none;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    // display: block;
     width: 200px;
-    // padding-top: 35px;
-    // padding-bottom: 35px;
     background: inherit;
   }
 
@@ -118,10 +121,6 @@
 .image-effects__range:first-child {
   padding-top: 0;
 }
-
-// .image-effects__range--current {
-//   display: block;
-// }
 
 .image-effects__range::-webkit-slider-thumb {
   appearance: none;
@@ -208,6 +207,7 @@
 
   @media (min-width: $desktop-width) {
     width: 410px;
+    padding-left: 39px;
     display: flex;
     justify-content: space-between;
   }
@@ -244,4 +244,9 @@
   border: 3px solid #dddfe0;
   color: #dddfe0;
   background-color: $grey-color;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 45px;
+    padding: 0 52px;
+  }
 }
