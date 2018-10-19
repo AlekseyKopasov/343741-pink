@@ -33,7 +33,7 @@
               <a class="main-navigation__item-link">Конкурс</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__item-link"  href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a class="main-navigation__item-link"  href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -41,10 +41,12 @@
     </header>
 
     <main class="main-content">
-      <h1 class="page-headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
+<div class="page-headline__wrapper">
+  <h1 class="page-headline__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
+</div>
 
       <form class="contest-form" action="https://echo.htmlacademy.ru">
-        <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную карту!
         <span class="contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
       </h2>
         <fieldset class="contest-form__field contest-form__field--contacts">
@@ -65,42 +67,52 @@
 
         <fieldset class="contest-form__field contest-form__field--achievements">
           <legend class="contest-form__headline contest-form__headline--achievements">Ваши безбашенные достижения в путешествии</legend>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
-            <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked>
-          </div>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="sunburn">Обгорел на пляже</label>
-            <input class="contest-form__input contest-form__input--achievements" id="sunburn" type="checkbox" checked>
-          </div>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="norris">Видел Чака Норриса</label>
-            <input class="contest-form__input contest-form__input--achievements" id="norris" type="checkbox">
-          </div>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="souvenirs">Накупил сувениров</label>
-            <input class="contest-form__input contest-form__input--achievements" id="souvenirs" type="checkbox">
-          </div>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="tower">Удержал башню</label>
-            <input class="contest-form__input contest-form__input--achievements" id="tower" type="checkbox" checked>
-          </div>
-          <div class="contest-form__wrapper contest-form__wrapper--achievements">
-            <label class="contest-form__label contest-form__label--achievements" for="smashed-the-hotel">Разгромил отель</label>
-            <input class="contest-form__input contest-form__input--achievements" id="smashed-the-hotel" type="checkbox">
+          <div class="content-form__wrapper content-form__wrapper--achievements">
+            <div class="contest-form__group">
+              <div class="contest-form__achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
+                <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked>
+              </div>
+              <div class="contest-form__achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="sunburn">Обгорел на пляже</label>
+                <input class="contest-form__input contest-form__input--achievements" id="sunburn" type="checkbox" checked>
+              </div>
+            </div>
+            <div class="contest-form__group">
+              <div class="contest-form__achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="norris">Видел Чака Норриса</label>
+                <input class="contest-form__input contest-form__input--achievements" id="norris" type="checkbox">
+              </div>
+              <div class="contest-form__achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="souvenirs">Накупил сувениров</label>
+                <input class="contest-form__input contest-form__input--achievements" id="souvenirs" type="checkbox">
+              </div>
+            </div>
+            <div class="contest-form__group">
+              <div class="contest-form__achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="tower">Удержал башню</label>
+                <input class="contest-form__input contest-form__input--achievements" id="tower" type="checkbox" checked>
+              </div>
+              <div class="contest-form__-achievements">
+                <label class="contest-form__label contest-form__label--achievements" for="smashed-the-hotel">Разгромил отель</label>
+                <input class="contest-form__input contest-form__input--achievements" id="smashed-the-hotel" type="checkbox">
+              </div>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--address">
           <legend class="contest-form__headline contest-form__headline--address">Контактная информация</legend>
-          <div class="contest-form__wrapper contest-form__wrapper--address">
+        <div class="contest-form__inner">
+            <div class="contest-form__wrapper contest-form__wrapper--address contest-form__wrapper--phone">
             <label class="contest-form__label contest-form__label--address" for="user-contacts__phone">Номер телефона</label>
             <input class="contest-form__input contest-form__input--address" id="user-contacts__phone" type="tel" placeholder="Номер, пожалуйста">
           </div>
-          <div class="contest-form__wrapper  contest-form__wrapper--address">
+          <div class="contest-form__wrapper  contest-form__wrapper--address contest-form__wrapper--mail">
             <label class="contest-form__label contest-form__label--address"  for="user-contacts__mail">Адрес почты</label>
             <input class="contest-form__input contest-form__input--address"  id="user-contacts__mail" type="email" placeholder="Введите почту*">
           </div>
+        </div>
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--app">
@@ -126,7 +138,7 @@
 
         <div class="contest-form__footer">
           <button class="contest-form__button" type="submit">Отправить форму</button>
-          <p class="contest-form__notes"><span class="contest-form__asterisk">*</span> — обязательные поля</p>
+          <p class="contest-form__notes"><span class="contest-form__asterisk">*</span> — обязательные <span class="contest-form__hidden-text">для заполнения</span> поля</p>
         </div>
       </form>
 
@@ -167,16 +179,29 @@
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Twitter</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14" viewBox="0 0 18 14" enable-background="new 0 0 17.5 14.663" xml:space="preserve" fill="#d22856">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Fasebook</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 9 19" enable-background="new 0 0 8.673 18.944" xml:space="preserve" fill="#d22856">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">YouTube</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15" height="14" viewBox="0 0 15 14" enable-background="new 0 0 14.64 13.96" xml:space="preserve" fill="#d22856">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
             </a>
           </li>
         </ul>

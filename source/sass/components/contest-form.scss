@@ -13,6 +13,8 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -50,6 +52,14 @@
     padding-top: 93px;
     padding-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 91px;
+    padding-left: 45px;
+    padding-right: 44px;
+    padding-bottom: 72px;
+  }
 }
 
 .contest-form__headline--hidden {
@@ -68,6 +78,11 @@
   @media (min-width: $tablet-width) {
     width: 660px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .contest-form__field--contacts {
@@ -80,6 +95,7 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
+    padding-top: 15px;
   }
 }
 
@@ -105,6 +121,8 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    margin: 0;
+    margin-top: 77px;
   }
 }
 
@@ -122,6 +140,7 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    margin-top: -14px;
   }
 }
 
@@ -134,12 +153,21 @@
     position: relative;
     top: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 33px;
+    margin-bottom: 35px;
+    width: auto;
+    top: 0;
+  }
 }
 
 .contest-form__field--app {
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-bottom: 50px;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
     order: 2;
     background-color: inherit;
     border: 2px solid #e5e5e5;
@@ -162,6 +190,47 @@
     flex-direction: row;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 54px;
+  }
+}
+
+.content-form__wrapper--achievements {
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    margin: 0 auto;
+    padding-left: 61px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contest-form__achievements {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 39px;
+    height: 39px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+
+    @media (min-width: $desktop-width) {
+      top: -5px;
+      left: -61px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .contest-form__wrapper--address {
@@ -176,13 +245,90 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 58px;
+      width: 62px;
+      height: 62px;
+      border: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-repeat: no-repeat;
+      // background-position: 455px 50%;
+      // border: 2px solid #e5e5e5;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 310px;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+
+    &::before {
+      top: 51px;
+      right: 506px;
+    }
   }
 }
 
-.contest-form__wrapper--achievements,
+.contest-form__inner {
+  display: flex;
+  justify-content: flex-start;
+  width: 820px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contest-form__wrapper--phone {
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-color: #e5e5e5;
+      background-image: url("../../img/icon-phone.svg");
+      background-size: 61px 23px;
+      background-position: 1px 20px;
+    }
+  }
+}
+
+.contest-form__wrapper--mail {
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 224px;
+      background-color: #e5e5e5;
+      background-image: url("../../img/icon-mail.svg");
+      background-size: 61px 23px;
+      background-position: 1px 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 64px;
+
+    &::before {
+      top: 51px;
+      right: 60px;
+    }
+  }
+}
+
 .contest-form__wrapper--app {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &::after {
     content: "";
@@ -192,38 +338,30 @@
     width: 38px;
     height: 38px;
     border: 1px solid #cccccc;
+    border-radius: 50%;
     background-color: $white-color;
-  }
-}
 
-.contest-form__wrapper--achievements {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 52px;
-    margin-left: 107px;
-
-    &::after {
-      top: -7;
-      left: -60px;
+    @media (min-width: $tablet-width) {
+      top: -4px;
+      left: 75px;
     }
   }
-}
-
-.contest-form__wrapper--app {
-  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-top: 42px;
     margin-bottom: -9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 44px;
+  }
 }
 
-.contest-form__wrapper--app::after {
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: -4px;
-    left: 48px;
+.contest-form__wrapper--app:last-child {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 61px;
   }
 }
 
@@ -238,6 +376,12 @@
     width: auto;
     padding: 0 23px 14px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+  }
 }
 
 .contest-form__label--achievements,
@@ -248,6 +392,14 @@
   line-height: 30px;
   text-transform: none;
   color: $dark-blue-color;
+}
+
+.contest-form__label--app {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-left: 135px;
+  }
 }
 
 .contest-form__label--achievements {
@@ -262,6 +414,11 @@
     padding-top: 11px;
     padding-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-left: 20px;
+  }
 }
 
 .contest-form__input {
@@ -274,9 +431,15 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+  border: 2px solid #e5e5e5;
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 16px;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 15px;
   }
 }
 
@@ -287,8 +450,19 @@
 
 .contest-form__input--address {
   @media (min-width: $tablet-width) {
+    position: relative;
+    width: 438px;
     margin: 0;
     padding: 15px 60px 15px 20px;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 15px;
   }
 }
 
@@ -296,6 +470,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -305,9 +480,13 @@
 
   @media (min-width: $tablet-width) {
     width: 436px;
-    top: 5px;
+    top: 0;
     margin: 60px auto;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -317,6 +496,11 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    margin-bottom: 34px;
   }
 }
 
@@ -339,8 +523,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    text-align: center;
+    width: 940px;
+    margin: 0;
+    margin-top: 57px;
   }
 }
 
@@ -366,6 +551,14 @@
 
   @media (min-width: $desktop-width) {
     width: 820px;
+    min-height: 130px;
+    margin: 0;
+    margin-bottom: 33px;
+    padding-top: 14px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 14px;
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -381,6 +574,12 @@
     display: flex;
     justify-content: space-between;
     order: 7;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin-top: 66px;
+    margin-bottom: -14px;
   }
 }
 
@@ -398,9 +597,8 @@
   border-radius: 3px;
   border: none;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: 300px;
-    margin-left: 11px;
     padding: 16px 42px;
   }
 }
@@ -413,7 +611,7 @@
   line-height: 30px;
   text-transform: uppercase;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 18px;
     padding-right: 8px;
   }
@@ -421,4 +619,13 @@
 
 .contest-form__asterisk {
   color: $pink-color;
+}
+
+.contest-form__hidden-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: baseline;
+  }
 }
