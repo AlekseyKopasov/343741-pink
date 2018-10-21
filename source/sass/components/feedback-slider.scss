@@ -111,6 +111,15 @@
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
+  fill: #bec2c7;
+
+  &:hover {
+    fill: $dark-blue-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -156,6 +165,10 @@
   border: 3px solid transparent;
   border-radius: 50%;
   background-color: #bec2c7;
+
+  &:hover {
+    background-color: #7e868f;
+  }
 }
 
 .feedback-slider__indicator--current {

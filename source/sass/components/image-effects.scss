@@ -2,15 +2,15 @@
   display: none;
   width: 240px;
   position: absolute;
-  left: -16px;
+  left: -22px;
   right: 0;
-  bottom: -25px;
+  bottom: -40px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    left: 56px;
-    top: 20px;
+    left: 60px;
+    top: 26px;
     margin-bottom: 0;
   }
 
@@ -39,11 +39,12 @@
     border-bottom: 1px solid #dddfe0;
     margin-top: 0;
     padding: 25px 0;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 385px;
-    padding: 13px 0;
+    padding: 24px 0;
   }
 }
 
@@ -51,55 +52,70 @@
   display: none;
 }
 
-.image-effects__title {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: top center;
+.image-effects__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #b5b9be;
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-    background-size: 25px auto;
-    background-position: -4px -2px;
+    width: 24px;
+    height: 24px;
+    fill: $pink-color;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 50px 50px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 }
 
-.image-effects__title--crop {
-  background-image: url("../../img/icon-editor-crop.svg");
-  background-position: -6px -3px;
+.image-effects__icon--crop {
+  top: 12px;
+  left: -7px;
+  fill: $pink-color;
 
   @media (min-width: $tablet-width) {
-    background-position: 3px -3px;
+    top: 5px;
+    left: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 3px 4px;
+    top: -7px;
   }
 }
 
-.image-effects__title--fill {
-  background-image: url("../../img/icon-editor-fill.svg");
+.image-effects__icon--fill {
+  top: 13px;
+  left: -26px;
 
   @media (min-width: $tablet-width) {
-    background-position: 3px 2px;
+    top: 8px;
+    left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: 6px;
   }
 }
 
-.image-effects__title--contrast {
-  background-position: 10px 5px;
-  background-size: 35px auto;
+.image-effects__icon--contrast {
+  top: 20px;
+  left: -38px;
 
   @media (min-width: $tablet-width) {
-    background-position: 8px 0;
-    background-size: 18px auto;
+    top: 7px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -131,6 +147,10 @@
   cursor: pointer;
   border: 2px solid $pink-color;
   border-radius: 50%;
+
+  &:active {
+    background-color: $pink-color;
+  }
 }
 
 .image-effects__range::-ms-track {
@@ -197,7 +217,7 @@
 .image-effects__buttons {
   width: 320px;
   padding: 0 17px;
-  padding-top: 30px;
+  padding-top: 36px;
   border-top: 1px solid #cccccc;
 
   @media (min-width: $tablet-width) {
@@ -227,6 +247,15 @@
   border-radius: 30px;
   background-color: $white-color;
 
+  &:hover {
+    background-color: $pink-color;
+    color: $white-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-left: 30px;
@@ -244,6 +273,17 @@
   border: 3px solid #dddfe0;
   color: #dddfe0;
   background-color: $grey-color;
+
+  &:hover {
+    border-color: #b5b9be;
+    background-color: transparent;
+    color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 45px;

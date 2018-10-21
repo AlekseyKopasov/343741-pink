@@ -1,7 +1,13 @@
 .research {
   display: none;
+  position: relative;
   width: 660px;
   margin: 0 auto;
+  background-image: url("../../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 235px 100%;
+  background-position: 24px -43px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,6 +15,24 @@
     padding-bottom: 110px;
     padding-left: 20px;
     padding-right: 20px;
+
+    &::after {
+      position: absolute;
+      content: "24";
+      width: 204px;
+      height: 204px;
+      top: 70px;
+      left: 38px;
+
+      @include open-sans-bold();
+
+      font-size: 96px;
+      line-height: 162px;
+      color: $pink-color;
+      text-align: center;
+      border-radius: 50%;
+      border: 15px solid $pink-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +40,17 @@
     display: flex;
     justify-content: flex-start;
     background-color: $grey-color;
+    background-size: 298px 100%;
+    background-position: 23px 2px;
+
+    &::after {
+      width: 250px;
+      height: 250px;
+      top: 140px;
+      left: 48px;
+      font-size: 120px;
+      line-height: 210px;
+    }
   }
 }
 
@@ -26,7 +61,7 @@
 
   @media (min-width: $desktop-width) {
     width: 574px;
-    margin-right: 153px;
+    margin-right: -12px;
     padding: 0;
   }
 }
@@ -45,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    padding-top: 150px;
+    padding-top: 165px;
     padding-bottom: 25px;
     line-height: 30px;
   }

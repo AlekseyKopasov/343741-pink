@@ -1,0 +1,13 @@
+.logo__pink {
+  fill: $white-color;
+
+  &:hover {
+    color: $pink-color;
+    fill: $pink-color;
+  }
+
+  &:active {
+    color: $white-color;
+    opacity: 0.3;
+  }
+}

@@ -19,9 +19,10 @@
 
 .page-headline__headline {
   min-height: 170px;
-
+  width: 300px;
   margin: 0 auto;
-  padding: 29px 135px;
+  padding: 0;
+  padding-top: 30px;
 
   @include open-sans-light();
 
@@ -32,8 +33,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
-    width: auto;
-    padding-top: 69px;
+    width: 660px;
+    padding: 70px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -43,8 +44,16 @@
     min-height: 354px;
     padding: 0;
     padding-top: 174px;
-    // padding-left: 18px;
+    padding-left: 15px;
     font-size: 50px;
     line-height: 60px;
+  }
+}
+
+.page-headline__headline--photo {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 314px;
+    padding-right: 287px;
   }
 }

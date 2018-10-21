@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 42px;
+    margin-bottom: 66px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,8 +37,8 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    padding-left: 186px;
-    padding-right: 186px;
+    padding-left: 205px;
+    padding-right: 180px;
     margin-bottom: 13px;
   }
 }
@@ -60,7 +60,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0 10px;
@@ -84,8 +84,13 @@
 }
 
 .user-photo__image--panorama {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    width: 700px;
+    width: auto;
+    max-width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 510px;
   }
 
@@ -96,6 +101,38 @@
 }
 
 .user-photo__post--fresh {
+  position: relative;
+  max-width: 1200px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 20px;
+
+    @include open-sans-bold();
+
+    line-height: 36px;
+    color: $white-color;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $pink-color;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 10px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 50px;
@@ -130,7 +167,7 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     padding-left: 27px;
-    padding-right: 24px;
+    padding-right: 30px;
     padding-bottom: 16px;
   }
 }
@@ -143,7 +180,7 @@
 }
 
 .user-photo__title {
-  padding-top: 23px;
+  padding-top: 25px;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue-color;
@@ -165,24 +202,31 @@
 }
 
 .user-photo__message {
-  padding-bottom: 13px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
-  }
+  padding-bottom: 10px;
 }
 
 .user-photo__message--fresh {
   order: 3;
+  padding-bottom: 8px;
 }
 
 .user-photo__button {
-  margin-right: 14px;
+  margin-right: 18px;
   padding-bottom: 8px;
   width: 14px;
   height: 14px;
+  cursor: pointer;
   border: none;
-  background-color: $pink-color;
+  background-color: transparent;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px;
+
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .user-photo__button--fresh {
@@ -193,19 +237,21 @@
 }
 
 .user-photo__rating {
+  display: flex;
+  align-items: center;
   margin-top: auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
   }
 }
 
 .user-photo__rating--fresh {
+  display: flex;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row-reverse;
   }
 }

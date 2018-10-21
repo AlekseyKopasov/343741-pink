@@ -38,9 +38,20 @@
     background-size: 100%;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 93px;
+    left: 143px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $pink-color;
+    border: 10px solid $white-color;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 386px;
-    margin-bottom: 30px;
     background-image: url("../../img/bg-map-tablet@1x.jpg");
     background-position: center -391px;
   }
@@ -65,11 +76,14 @@
   padding-top: 43px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 640px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
-    padding: 34px 41px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,10 +95,20 @@
 
 .page-footer__inner--hidden {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__logo {
+  fill: $dark-blue-color;
   padding-bottom: 32px;
+
+  &:active {
+    fill: $dark-blue-color;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
@@ -106,8 +130,9 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 18px;
     padding-bottom: 0;
+    margin-left: 58px;
+    margin-right: 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,17 +142,24 @@
 }
 
 .page-footer__social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   border: 3px solid #cccccc;
 
+  &:hover {
+    border-color: $dark-blue-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-right: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
   }
 }
 
@@ -149,6 +181,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+  }
 }
 
 .page-footer__copyright-text {
@@ -156,7 +192,17 @@
   line-height: 18px;
 
   @media (min-width: $desktop-width) {
-    padding-right: 13px;
+    padding: 0;
     font-size: 18px;
+  }
+}
+
+.page-footer__copyright-logo {
+  &:hover {
+    fill: $dark-blue-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

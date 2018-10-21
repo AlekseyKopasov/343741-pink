@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,6 +168,15 @@
   color: $pink-color;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    color: $dark-blue-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__text--mail {

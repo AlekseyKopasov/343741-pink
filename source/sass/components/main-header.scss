@@ -46,6 +46,13 @@
   margin-left: 20px;
   margin-right: auto;
 
+  &:hover {
+    .logo__pink {
+      color: $white-color;
+      fill: $pink-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 64px;
   }
