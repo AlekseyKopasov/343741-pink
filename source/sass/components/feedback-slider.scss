@@ -8,6 +8,28 @@
   @media (min-width: $tablet-width) {
     width: 660px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    padding-top: 191px;
+    padding-bottom: 63px;
+  }
+
+  &::before {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 80px;
+      height: 65px;
+      position: absolute;
+      content: "";
+      top: 79px;
+      left: 372px;
+      background-image: url("../../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .feedback-slider__feedbacks {
@@ -41,6 +63,16 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    font-size: 24px;
+  }
 }
 
 .feedback-slider__author-info {
@@ -48,7 +80,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -57,26 +94,46 @@
   padding: 0;
   padding-bottom: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+    font-size: 18px;
+  }
 }
 
 .feedback-slider__button {
-  display: block;
+  display: none;
   position: absolute;
-  top: 0;
+  top: 220px;
   left: 0;
   width: 25px;
   height: 42px;
   border: none;
   background-color: transparent;
+  background-repeat: no-repeat;
+  fill: #bec2c7;
+
+  &:hover {
+    fill: $dark-blue-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .feedback-slider__button--next {
-  background-image: url("../../icon-review-arrow-left.svg");
+  left: -60px;
+  background-image: url("../../img/icon-review-arrow-left.svg");
 }
 
 .feedback-slider__button--prev {
-  left: 100px;
-  background-image: url("../../icon-review-arrow-right.svg");
+  left: 857px;
+  background-image: url("../../img/icon-review-arrow-right.svg");
 }
 
 .feedback-slider__dots {
@@ -85,10 +142,14 @@
 
   @include list-reset();
   padding-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .feedback-slider__dot {
-  margin-right: 17px;
+  margin-right: 18px;
 }
 
 .feedback-slider__dot:last-child {
@@ -104,6 +165,10 @@
   border: 3px solid transparent;
   border-radius: 50%;
   background-color: #bec2c7;
+
+  &:hover {
+    background-color: #7e868f;
+  }
 }
 
 .feedback-slider__indicator--current {

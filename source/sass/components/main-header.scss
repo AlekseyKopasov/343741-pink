@@ -1,11 +1,10 @@
 .main-header {
-  width: 320px;
   margin: 0 auto;
   color: $white-color;
   background-color: $grey-blue-color;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -21,10 +20,15 @@
 }
 
 .main-header__wrapper {
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 960px;
@@ -38,7 +42,18 @@
   height: 22px;
   width: 76px;
   margin-top: 22px;
-  margin-bottom: 25px;
-  margin-left: 22px;
+  margin-bottom: 27px;
+  margin-left: 20px;
   margin-right: auto;
+
+  &:hover {
+    .logo__pink {
+      color: $white-color;
+      fill: $pink-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
 }

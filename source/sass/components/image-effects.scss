@@ -1,24 +1,50 @@
 .image-effects__controls {
+  display: none;
   width: 240px;
-  margin-bottom: 40px;
+  position: absolute;
+  left: -22px;
+  right: 0;
+  bottom: -40px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
+    display: block;
+    left: 60px;
+    top: 26px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    left: 95px;
+    top: 23px;
   }
 }
 
+.image-effects__controls--current {
+  display: block;
+}
+
 .image-effects__field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin: 0;
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: 275px;
+    border-bottom: 1px solid #dddfe0;
     margin-top: 0;
+    padding: 25px 0;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 385px;
+    padding: 24px 0;
   }
 }
 
@@ -26,48 +52,80 @@
   display: none;
 }
 
-.image-effects__title {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: top center;
+.image-effects__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #b5b9be;
 
   @media (min-width: $tablet-width) {
-    background-size: 17px auto;
-    width: 15px;
-    height: 15px;
+    width: 24px;
+    height: 24px;
+    fill: $pink-color;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 50px 50px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 }
 
-.image-effects__title--crop {
-  background-image: url("../../img/icon-editor-crop.svg");
+.image-effects__icon--crop {
+  top: 12px;
+  left: -7px;
+  fill: $pink-color;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+  }
 }
 
-.image-effects__title--fill {
-  background-image: url("../../img/icon-editor-fill.svg");
+.image-effects__icon--fill {
+  top: 13px;
+  left: -26px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: 6px;
+  }
 }
 
-.image-effects__title--contrast {
-  background-image: url("../../img/icon-editor-contrast.svg");
+.image-effects__icon--contrast {
+  top: 20px;
+  left: -38px;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 // Стили для ползунка
 .image-effects__range {
-  display: none;
   appearance: none;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 200px;
-    padding-bottom: 35px;
     background: inherit;
   }
 
@@ -76,19 +134,23 @@
   }
 }
 
-.image-effects__range--current {
-  display: block;
+.image-effects__range:first-child {
+  padding-top: 0;
 }
 
 .image-effects__range::-webkit-slider-thumb {
   appearance: none;
   margin-top: -6px;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   background: $white-color;
   cursor: pointer;
   border: 2px solid $pink-color;
   border-radius: 50%;
+
+  &:active {
+    background-color: $pink-color;
+  }
 }
 
 .image-effects__range::-ms-track {
@@ -154,16 +216,18 @@
 
 .image-effects__buttons {
   width: 320px;
-  padding: 0 20px;
-  padding-top: 40px;
+  padding: 0 17px;
+  padding-top: 36px;
   border-top: 1px solid #cccccc;
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
+    padding-left: 39px;
     display: flex;
     justify-content: space-between;
   }
@@ -183,8 +247,19 @@
   border-radius: 30px;
   background-color: $white-color;
 
+  &:hover {
+    background-color: $pink-color;
+    color: $white-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
-    width: 285px;
+    width: 260px;
+    margin-left: 30px;
+    margin-bottom: 25px;
     padding: 17px 78px;
   }
 
@@ -198,4 +273,20 @@
   border: 3px solid #dddfe0;
   color: #dddfe0;
   background-color: $grey-color;
+
+  &:hover {
+    border-color: #b5b9be;
+    background-color: transparent;
+    color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 45px;
+    padding: 0 52px;
+  }
 }

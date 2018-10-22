@@ -1,9 +1,28 @@
-.page-headline {
-  width: 320px;
-  height: 170px;
+.page-headline__wrapper {
+  background-color: $grey-blue-color;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 700 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 395px;
+    min-width: 960px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+  }
+}
+
+.page-headline__headline {
+  min-height: 170px;
+  width: 300px;
   margin: 0 auto;
-  padding: 35px 20px;
+  padding: 0;
+  padding-top: 30px;
 
   @include open-sans-light();
 
@@ -11,24 +30,30 @@
   line-height: 28px;
   color: $white-color;
   text-align: center;
-  background-color: $grey-blue-color;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
     width: 660px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-size: 700 auto;
+    padding: 70px;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    min-height: 394px;
-    padding-top: 72px;
-    min-width: 960px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
-    background-size: cover;
+    width: 820px;
+    min-height: 354px;
+    padding: 0;
+    padding-top: 174px;
+    padding-left: 15px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.page-headline__headline--photo {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 314px;
+    padding-right: 287px;
   }
 }

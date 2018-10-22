@@ -1,7 +1,13 @@
 .research {
   display: none;
+  position: relative;
   width: 660px;
   margin: 0 auto;
+  background-image: url("../../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 235px 100%;
+  background-position: 24px -43px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,46 +15,97 @@
     padding-bottom: 110px;
     padding-left: 20px;
     padding-right: 20px;
+
+    &::after {
+      position: absolute;
+      content: "24";
+      width: 204px;
+      height: 204px;
+      top: 70px;
+      left: 38px;
+
+      @include open-sans-bold();
+
+      font-size: 96px;
+      line-height: 162px;
+      color: $pink-color;
+      text-align: center;
+      border-radius: 50%;
+      border: 15px solid $pink-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
     background-color: $grey-color;
+    background-size: 298px 100%;
+    background-position: 23px 2px;
+
+    &::after {
+      width: 250px;
+      height: 250px;
+      top: 140px;
+      left: 48px;
+      font-size: 120px;
+      line-height: 210px;
+    }
   }
 }
 
 .research__wrapper {
   width: 320px;
   min-height: 280px;
+  padding-left: 9px;
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 574px;
+    margin-right: -12px;
+    padding: 0;
   }
 }
 
 .research__title {
   @include open-sans-bold();
 
+  width: 170px;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-right: 15px;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 55px;
+  padding-bottom: 9px;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 165px;
+    padding-bottom: 25px;
+    line-height: 30px;
+  }
 }
 
 .research__description {
-  width: 310px;
+  width: 300px;
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 
   @media (min-width: $desktop-width) {
-    width: 510px;
+    width: 570px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .research__link {
   color: $pink-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
 }
