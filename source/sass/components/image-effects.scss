@@ -4,7 +4,7 @@
   position: absolute;
   left: -22px;
   right: 0;
-  bottom: -40px;
+  bottom: -37px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
@@ -71,8 +71,8 @@
 }
 
 .image-effects__icon--crop {
-  top: 12px;
-  left: -7px;
+  top: 9px;
+  left: -6px;
   fill: $pink-color;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +86,7 @@
 }
 
 .image-effects__icon--fill {
-  top: 13px;
+  top: 11px;
   left: -26px;
 
   @media (min-width: $tablet-width) {
@@ -101,7 +101,7 @@
 }
 
 .image-effects__icon--contrast {
-  top: 20px;
+  top: 17px;
   left: -38px;
 
   @media (min-width: $tablet-width) {

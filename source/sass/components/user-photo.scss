@@ -1,6 +1,6 @@
 .user-photo {
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 10px;
@@ -73,6 +73,9 @@
 }
 
 .user-photo__image {
+  width: 280px;
+  height: 180px;
+
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 300px;
@@ -84,6 +87,8 @@
 }
 
 .user-photo__image--panorama {
+  width: 320px;
+  height: 137px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -180,7 +185,7 @@
 }
 
 .user-photo__title {
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue-color;
@@ -202,7 +207,7 @@
 }
 
 .user-photo__message {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .user-photo__message--fresh {

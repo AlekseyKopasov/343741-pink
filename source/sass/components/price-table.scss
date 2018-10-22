@@ -37,7 +37,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-top: 99px;
-    padding-bottom: 30px;
+    padding-bottom: 95px;
   }
 }
 
@@ -55,6 +55,11 @@
     width: 100%;
     padding-bottom: 68px;
     overflow: visible;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0;
   }
 }
 
@@ -74,9 +79,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 100%;
     transform: translateX(0);
-    left: 0;
+    left: 9px;
+    top: -3px;
   }
 }
 
@@ -206,13 +212,18 @@
   display: block;
   width: 31px;
   height: 30px;
-  top: 13px;
-  right: 60px;
+  top: 19px;
+  right: 18px;
   text-indent: -1000px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 31px 21px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     top: 19px;
@@ -258,7 +269,7 @@
   width: 280px;
 
   @include list-reset();
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     display: none;

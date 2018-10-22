@@ -1,15 +1,29 @@
 .research {
   display: none;
-  position: relative;
   width: 660px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $grey-color;
+  }
+}
+
+.research__inner {
+  position: relative;
   background-image: url("../../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-size: 235px 100%;
-  background-position: 24px -43px;
-
+  background-position: 22px -40px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     padding-bottom: 110px;
@@ -27,7 +41,7 @@
       @include open-sans-bold();
 
       font-size: 96px;
-      line-height: 162px;
+      line-height: 167px;
       color: $pink-color;
       text-align: center;
       border-radius: 50%;
@@ -36,18 +50,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    background-color: $grey-color;
+    width: 940px;
+    margin: 0 auto;
     background-size: 298px 100%;
-    background-position: 23px 2px;
+    background-position: 10px -4px;
 
     &::after {
       width: 250px;
       height: 250px;
-      top: 140px;
-      left: 48px;
+      top: 124px;
+      left: 33px;
       font-size: 120px;
       line-height: 210px;
     }
@@ -60,9 +72,10 @@
   padding-left: 9px;
 
   @media (min-width: $desktop-width) {
-    width: 574px;
-    margin-right: -12px;
-    padding: 0;
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
   }
 }
 
@@ -80,8 +93,8 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    padding-top: 165px;
-    padding-bottom: 25px;
+    padding-top: 151px;
+    padding-bottom: 22px;
     line-height: 30px;
   }
 }
@@ -93,7 +106,7 @@
   padding-bottom: 11px;
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 100%;
     padding-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
