@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
-    padding-left: 105px;
+    padding-left: 80px;
     padding-top: 193px;
     padding-bottom: 63px;
     padding-right: 83px;
@@ -28,7 +28,7 @@
       position: absolute;
       content: "";
       top: 79px;
-      left: 443px;
+      left: 432px;
       background-image: url("../../img/icon-quotes.svg");
       background-repeat: no-repeat;
     }
@@ -130,12 +130,12 @@
 }
 
 .feedback-slider__button--prev {
-  left: 12px;
+  left: 0;
   background-image: url("../../img/icon-review-arrow-left.svg");
 }
 
 .feedback-slider__button--next {
-  left: 928px;
+  left: 916px;
   background-image: url("../../img/icon-review-arrow-right.svg");
 }
 

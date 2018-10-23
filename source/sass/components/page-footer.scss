@@ -74,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 530px;
+    min-height: 515px;
     margin-bottom: 70px;
     background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-position: center -317px;
@@ -102,14 +102,16 @@
     width: 640px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 40px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 960px;
     margin: 0;
     padding: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -124,6 +126,7 @@
 .page-footer__logo {
   fill: $dark-blue-color;
   padding-bottom: 32px;
+  width: auto;
 
   &:active {
     fill: $dark-blue-color;
@@ -150,12 +153,13 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-right: 92px;
+    margin-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 14px;
+    padding-top: 10px;
   }
 }
 
@@ -201,7 +205,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 232px;
+    margin-left: 0;
   }
 }
 
@@ -215,7 +219,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 10px;
+    top: 5px;
+    left: -10px;
+    margin-left: 23px;
   }
 }
 
@@ -225,6 +231,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 10px;
     font-size: 18px;
   }
 }

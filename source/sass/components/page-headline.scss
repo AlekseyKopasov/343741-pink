@@ -2,18 +2,37 @@
   background-color: $grey-blue-color;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
+  background-size: 320px auto;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-size: 700 auto;
+    background-size: 100% auto;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 395px;
+    min-height: 392px;
     min-width: 960px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
-    background-size: cover;
+    // background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      // background-size: cover;
+    }
   }
 }
 
@@ -43,8 +62,10 @@
     width: 820px;
     min-height: 354px;
     padding: 0;
-    padding-top: 174px;
-    padding-left: 15px;
+    // padding-top: 174px;
+    // padding-left: 15px;
+    padding-top: 172px;
+    padding-left: 0; // добавил для формы
     font-size: 50px;
     line-height: 60px;
   }
@@ -52,8 +73,8 @@
 
 .page-headline__headline--photo {
   @media (min-width: $desktop-width) {
-    width: auto;
-    padding-left: 314px;
-    padding-right: 287px;
+    width: 385px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

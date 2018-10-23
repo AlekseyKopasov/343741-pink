@@ -52,8 +52,8 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
-    background-size: 298px 100%;
-    background-position: 10px -4px;
+    background-size: 298px auto;
+    background-position: 10px 52px;
 
     &::after {
       width: 250px;
@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     width: 555px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     margin-left: auto;
