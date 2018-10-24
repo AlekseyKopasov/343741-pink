@@ -16,8 +16,9 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    left: 95px;
-    top: 23px;
+    left: 97px;
+    top: 20px;
+    bottom: 0;
   }
 }
 
@@ -228,7 +229,6 @@
 
   @media (min-width: $desktop-width) {
     width: 410px;
-    padding-left: 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -267,8 +267,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 183px;
-    padding: 17px 45px;
+    width: auto;
+    padding: 17px 43px;
+    padding-right: 36px;
   }
 }
 

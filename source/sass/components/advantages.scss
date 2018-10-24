@@ -78,19 +78,19 @@
     height: 277px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-mobile@1x.png");
     background-size: 154px 317px;
     background-repeat: no-repeat;
     background-position: center top;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../../img/iphone-screen-mobile@2x.png");
+      background-image: url("../img/iphone-screen-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) {
       height: auto;
-      background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
       width: 50%;
       margin: 0;
       background-size: 268px 482px;
@@ -98,7 +98,7 @@
 
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/iphone-screen-3-tablet@2x.png");
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
       }
     }
 
@@ -109,8 +109,10 @@
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #f2f2f2 url("../img/bg-triangle-white.svg");
@@ -159,7 +161,6 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    // margin-right: -18px;
     flex-direction: row;
   }
 }
@@ -209,11 +210,11 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/iphone-screen-1-desktop@2x.png");
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
       }
     }
   }
@@ -226,11 +227,11 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/iphone-screen-2-desktop@2x.png");
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
       }
     }
   }
@@ -243,11 +244,11 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/iphone-screen-3-desktop@2x.png");
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
       }
     }
   }
@@ -265,6 +266,7 @@
   color: #000000;
 
   @media (min-width: $desktop-width) {
+    width: 240px;
     padding-bottom: 23px;
     font-size: 30px;
     line-height: 30px;
@@ -277,6 +279,7 @@
   color: $grey-blue-color;
 
   @media (min-width: $desktop-width) {
+    width: 240px;
     font-size: 18px;
     line-height: 30px;
   }

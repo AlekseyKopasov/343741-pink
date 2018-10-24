@@ -17,7 +17,7 @@
 
 .research__inner {
   position: relative;
-  background-image: url("../../img/icon-timer.svg");
+  background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-size: 235px 100%;
   background-position: 22px -40px;
@@ -29,6 +29,8 @@
     padding-bottom: 110px;
     padding-left: 20px;
     padding-right: 20px;
+    background-size: 235px auto;
+    background-position: 22px 19px;
 
     &::after {
       position: absolute;

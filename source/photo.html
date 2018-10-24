@@ -10,11 +10,11 @@
 <body class="page">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="logo main-header__logo">
+      <a class="main-header__logo">
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="logo__pink" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          <img class="main-header__logo-pink" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
         </picture>
       </a>
       <nav class="main-navigation">
@@ -25,8 +25,8 @@
           <li class="main-navigation__item">
             <a class="main-navigation__item-link" href="index.html">Главная</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__item-link main-navigation__item--current">Фотографии</a>
+          <li class="main-navigation__item main-navigation__item--curren">
+            <a class="main-navigation__item-link">Фотографии</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__item-link" href="form.html">Конкурс</a>
@@ -40,15 +40,15 @@
   </header>
 
     <main class="main-content">
-      <div class="page-headline__wrapper">
-        <h1 class="page-headline__headline page-headline__headline--photo">Фотографии пользователей</h1>
+      <div class="main-content__wrapper">
+        <h1 class="main-content__headline main-content__headline--photo">Фотографии пользователей</h1>
       </div>
 
       <section class="user-photo">
         <h2 class="user-photo__headline">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
 
         <div class="user-photo__post user-photo__post--fresh">
-          <picture>
+          <picture  class="user-photo__image user-photo__image--panorama">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
               <img class="user-photo__image user-photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
@@ -178,7 +178,7 @@
 
       <section class="filters-image">
         <h2 class="filters-image__headline">Затмите их всех!</h2>
-        <h3 class="filters-image__headline filters-image__headlin--subheadline">Выкладывайте все, что накопилось в телефоне!</h3>
+        <h3 class="filters-image__headline filters-image__headline--subheadline">Выкладывайте все, что накопилось в телефоне!</h3>
         <div class="filters-image__wrapper">
           <form class="filters-image__form image-effects" action="https://echo.htmlacademy.ru">
             <div class="filters-image__upload">
@@ -246,8 +246,8 @@
     <footer class="page-footer">
       <div class="page-footer__map page-footer__map--hidden"></div>
       <div class="page-footer__inner">
-        <a class="logo__pink page-footer__logo" href="index.html">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+        <a class="page-footer__logo" href="index.html">
+          <svg class="page-footer__logo-pink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -301,6 +301,6 @@
       </div>
     </footer>
 
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/lib/picturefill.min.js"></script>
   </body>
   </html>

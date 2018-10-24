@@ -8,7 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 620px;
-    margin-bottom: 55px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,11 +89,17 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    color: $dark-blue-color;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    display: inline;
   }
 }
 
@@ -244,12 +250,16 @@
   }
 }
 
-.content-form__wrapper--achievements {
+.contest-form__wrapper--achievements {
   width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin-left: 107px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -257,8 +267,7 @@
     margin: 0 auto;
     padding-left: 50px;
     padding-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
@@ -268,8 +277,8 @@
   margin-left: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
-    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-top: 4px;
   }
 }
 
@@ -295,10 +304,6 @@
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       background-repeat: no-repeat;
-
-      // @media (min-width: $tablet-width) {
-      //   top: 91px;
-      // }
 
       @media (min-width: $desktop-width) {
         height: 62px;
@@ -356,7 +361,7 @@
 
     &::before {
       background-color: #e5e5e5;
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
       background-size: 22px auto;
       background-position: center;
     }
@@ -373,7 +378,7 @@
     &::before {
       top: 0;
       background-color: #e5e5e5;
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("../img/icon-mail.svg");
       background-size: 22px auto;
       background-position: center;
     }
@@ -608,11 +613,12 @@
 }
 
 .contest-form__input--achievements {
-  top: 1px;
-  left: -59px;
+  top: -3px;
+  left: 10px;
 
   @media (min-width: $tablet-width) {
     top: -3px;
+    left: -59px;
   }
 }
 
@@ -665,7 +671,7 @@
   left: 19px;
   width: 26px;
   height: 23px;
-  background: url("../../img/icon-check.svg");
+  background: url("../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 22px 23px;
