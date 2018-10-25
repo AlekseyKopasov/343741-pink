@@ -10,9 +10,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 820px;
-    padding-top: 191px;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-top: 193px;
     padding-bottom: 63px;
+    padding-right: 83px;
   }
 
   &::before {
@@ -25,8 +28,8 @@
       position: absolute;
       content: "";
       top: 79px;
-      left: 372px;
-      background-image: url("../../img/icon-quotes.svg");
+      left: 432px;
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
     }
   }
@@ -56,7 +59,7 @@
 .feedback-slider__author-name {
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   @include open-sans-bold();
 
@@ -126,14 +129,14 @@
   }
 }
 
-.feedback-slider__button--next {
-  left: -60px;
-  background-image: url("../../img/icon-review-arrow-left.svg");
+.feedback-slider__button--prev {
+  left: 0;
+  background-image: url("../img/icon-review-arrow-left.svg");
 }
 
-.feedback-slider__button--prev {
-  left: 857px;
-  background-image: url("../../img/icon-review-arrow-right.svg");
+.feedback-slider__button--next {
+  left: 916px;
+  background-image: url("../img/icon-review-arrow-right.svg");
 }
 
 .feedback-slider__dots {

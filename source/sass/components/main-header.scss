@@ -39,21 +39,31 @@
 .main-header__logo {
   display: inline-block;
   vertical-align: top;
-  height: 22px;
-  width: 76px;
   margin-top: 22px;
-  margin-bottom: 27px;
+  margin-bottom: 18px;
   margin-left: 20px;
   margin-right: auto;
 
-  &:hover {
-    .logo__pink {
-      color: $white-color;
-      fill: $pink-color;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 37px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+  }
+}
+
+.main-header__logo-pink {
+  fill: $white-color;
+  width: 100%;
+
+  &:hover {
+    fill: $pink-color;
+  }
+
+  &:active {
+    color: $white-color;
+    opacity: 0.3;
   }
 }

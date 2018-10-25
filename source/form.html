@@ -10,18 +10,17 @@
   <body class="page">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="logo main-header__logo" href="index.html">
-          <svg class="logo__pink" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75" height="22" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-            <g>
-              <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-              <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-              <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-              <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-            </g>
-          </svg>
+        <a class="main-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-header__logo-pink" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
         </a>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle" title="Главное меню"></button>
+          <button class="main-navigation__toggle main-navigation__toggle--active" title="Главное меню">
+            <span class="main-navigation__cross"></span>
+          </button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__item-link" href="index.html">Главная</a>
@@ -41,24 +40,24 @@
     </header>
 
     <main class="main-content">
-<div class="page-headline__wrapper">
-  <h1 class="page-headline__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
+<div class="main-content__wrapper">
+  <h1 class="main-content__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
 </div>
 
       <form class="contest-form" action="https://echo.htmlacademy.ru">
         <div class="contest-form__wrapper-form">
             <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную карту!
-          <span class="contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
+          <span class="contest-form__headline contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
                 </h2>
           <fieldset class="contest-form__field contest-form__field--contacts">
             <legend class="visually-hidden">Персональные данные</legend>
             <div class="contest-form__wrapper">
               <label class="contest-form__label" for="last-name">Фамилия</label>
-              <input class="contest-form__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*">
+              <input class="contest-form__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *">
             </div>
             <div class="contest-form__wrapper">
               <label class="contest-form__label" for="first-name">Имя</label>
-              <input class="contest-form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+              <input class="contest-form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
             </div>
             <div class="contest-form__wrapper">
               <label class="contest-form__label" for="patronymic-name">Отчество</label>
@@ -68,35 +67,35 @@
 
             <fieldset class="contest-form__field contest-form__field--achievements">
               <legend class="contest-form__headline contest-form__headline--achievements">Ваши безбашенные достижения в путешествии</legend>
-              <div class="content-form__wrapper content-form__wrapper--achievements">
+              <div class="contest-form__wrapper contest-form__wrapper--achievements">
                 <div class="contest-form__group">
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
                     <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked>
+                    <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
                   </div>
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="sunburn">Обгорел на пляже</label>
                     <input class="contest-form__input contest-form__input--achievements" id="sunburn" type="checkbox" checked>
+                    <label class="contest-form__label contest-form__label--achievements" for="sunburn">Обгорел на пляже</label>
                   </div>
                 </div>
                 <div class="contest-form__group">
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="norris">Видел Чака Норриса</label>
                     <input class="contest-form__input contest-form__input--achievements" id="norris" type="checkbox">
+                    <label class="contest-form__label contest-form__label--achievements" for="norris">Видел Чака Норриса</label>
                   </div>
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="souvenirs">Накупил сувениров</label>
                     <input class="contest-form__input contest-form__input--achievements" id="souvenirs" type="checkbox">
+                    <label class="contest-form__label contest-form__label--achievements" for="souvenirs">Накупил сувениров</label>
                   </div>
                 </div>
                 <div class="contest-form__group">
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="tower">Удержал башню</label>
                     <input class="contest-form__input contest-form__input--achievements" id="tower" type="checkbox" checked>
+                    <label class="contest-form__label contest-form__label--achievements" for="tower">Удержал башню</label>
                   </div>
                   <div class="contest-form__achievements">
-                    <label class="contest-form__label contest-form__label--achievements" for="smashed-the-hotel">Разгромил отель</label>
                     <input class="contest-form__input contest-form__input--achievements" id="smashed-the-hotel" type="checkbox">
+                    <label class="contest-form__label contest-form__label--achievements" for="smashed-the-hotel">Разгромил отель</label>
                   </div>
                 </div>
               </div>
@@ -111,7 +110,7 @@
             </div>
             <div class="contest-form__wrapper  contest-form__wrapper--address contest-form__wrapper--mail">
               <label class="contest-form__label contest-form__label--address"  for="user-contacts__mail">Адрес почты</label>
-              <input class="contest-form__input contest-form__input--address"  id="user-contacts__mail" type="email" placeholder="Введите почту*">
+              <input class="contest-form__input contest-form__input--address"  id="user-contacts__mail" type="email" placeholder="Введите почту *">
             </div>
           </div>
           </fieldset>
@@ -120,16 +119,16 @@
             <legend class="contest-form__headline contest-form__headline--app">С каким приложением путешествовали?</legend>
             <div class="contest-form__inner-app">
               <div class="contest-form__wrapper contest-form__wrapper--app">
-                <label class="contest-form__label contest-form__label--app"  for="user-app__ios">Pink для iOS</label>
                 <input class="contest-form__input contest-form__input--app" id="user-app__ios" type="radio" name="user-app" checked>
+                <label class="contest-form__label contest-form__label--app"  for="user-app__ios">Pink для iOS</label>
               </div>
               <div class="contest-form__wrapper contest-form__wrapper--app">
-                <label class="contest-form__label contest-form__label--app" for="user-app__android">Pink на Android</label>
                 <input class="contest-form__input contest-form__input--app" id="user-app__android" type="radio" name="user-app">
+                <label class="contest-form__label contest-form__label--app" for="user-app__android">Pink на Android</label>
               </div>
               <div class="contest-form__wrapper contest-form__wrapper--app">
-                <label class="contest-form__label contest-form__label--app" for="user-app__windows-phone">Windows Phone</label>
                 <input class="contest-form__input contest-form__input--app" id="user-app__windows-phone" type="radio" name="user-app">
+                <label class="contest-form__label contest-form__label--app" for="user-app__windows-phone">Windows Phone</label>
               </div>
             </div>
           </fieldset>
@@ -145,29 +144,13 @@
           </div>
         </div>
       </form>
-
-      <div class="modal modal--success">
-        <h2 class="modal__headline">Ваша заявка отправлена</h2>
-        <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее<br>время мы рассмотрим ее и<br>оповестим вас.</p>
-        <div class="modal__footer">
-          <button class="modal__success-button">Закрыть окно</button>
-        </div>
-      </div>
-
-      <div class="modal modal--failure">
-        <h2 class="modal__headline">Что-то пошло не так!</h2>
-        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <div class="modal__footer">
-          <button class="modal__failure-button">Ok</button>
-        </div>
-      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__map page-footer__map--hidden"></div>
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="index.html">
-          <svg class="logo__pink" version="1.1" id="Layer_1.3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146" height="40" viewBox="0 0 146 40" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <svg class="page-footer__logo-pink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -213,12 +196,30 @@
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTMLacademy</span>
-            <svg  class="page-footer__copyright-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 27 34" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#d22856">
+            <svg class="page-footer__copyright-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 27 34" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#d22856">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+
+    <div class="modal modal--success">
+      <h2 class="modal__headline">Ваша заявка отправлена</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal__footer modal__footer--success">
+        <button class="modal__success-button">Закрыть окно</button>
+      </div>
+    </div>
+
+    <div class="modal modal--failure">
+      <h2 class="modal__headline">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__footer">
+        <button class="modal__failure-button">Ok</button>
+      </div>
+    </div>
+
+    <script src="js/lib/picturefill.min.js"></script>
   </body>
   </html>

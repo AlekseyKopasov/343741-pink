@@ -8,10 +8,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 620px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-bottom: 44px;
     align-items: center;
     justify-content: space-between;
   }
@@ -70,14 +72,14 @@
     padding: 0 50px;
     padding-top: 101px;
     padding-bottom: 71px;
-    padding-left: 32px;
+    padding-left: 50px;
     padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 100px;
-    padding-left: 58px;
+    padding-left: 45px;
     padding-right: 44px;
     padding-bottom: 72px;
   }
@@ -87,11 +89,17 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    color: $dark-blue-color;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    display: inline;
   }
 }
 
@@ -183,7 +191,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 250px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     margin-bottom: -34px;
     position: relative;
     top: 4px;
@@ -204,10 +212,10 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0;
-    margin-top: 6px;
+    margin-top: 9px;
     margin-bottom: 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
     align-self: flex-start;
     order: 2;
     background-color: inherit;
@@ -228,6 +236,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 100%;
     margin-bottom: 38px;
     flex-direction: row;
@@ -241,12 +250,16 @@
   }
 }
 
-.content-form__wrapper--achievements {
+.contest-form__wrapper--achievements {
   width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin-left: 107px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -254,8 +267,7 @@
     margin: 0 auto;
     padding-left: 50px;
     padding-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
@@ -264,30 +276,9 @@
   margin-bottom: 52px;
   margin-left: 10px;
 
-  &::after {
-    position: absolute;
-    top: -4px;
-    left: 9px;
-    content: "";
-    width: 39px;
-    height: 39px;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
-    background-color: $white-color;
-
-    @media (min-width: $tablet-width) {
-      top: -5px;
-      left: -59px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: -5px;
-      left: -61px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
+    margin-top: 4px;
   }
 }
 
@@ -305,8 +296,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50px;
-      right: 58px;
+      top: 0;
+      right: 0;
       width: 64px;
       height: 64px;
       border: 0;
@@ -314,8 +305,9 @@
       border-bottom-right-radius: 3px;
       background-repeat: no-repeat;
 
-      @media (min-width: $tablet-width) {
-        top: 89px;
+      @media (min-width: $desktop-width) {
+        height: 62px;
+        right: 502px;
       }
     }
   }
@@ -327,8 +319,8 @@
     margin-right: auto;
 
     &::before {
-      top: 51px;
-      right: 506px;
+      top: 0;
+      left: 312px;
     }
   }
 }
@@ -340,7 +332,7 @@
   justify-content: flex-start;
   margin: 0 auto;
   margin-bottom: 16px;
-  padding-top: 33px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -362,24 +354,33 @@
 }
 
 .contest-form__wrapper--phone {
+  margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+
     &::before {
       background-color: #e5e5e5;
-      background-image: url("../../img/icon-phone.svg");
-      background-size: 61px 23px;
-      background-position: 1px 20px;
+      background-image: url("../img/icon-phone.svg");
+      background-size: 22px auto;
+      background-position: center;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 .contest-form__wrapper--mail {
   @media (min-width: $tablet-width) {
     &::before {
-      top: 220px;
+      top: 0;
       background-color: #e5e5e5;
-      background-image: url("../../img/icon-mail.svg");
-      background-size: 61px 14px;
-      background-position: -1px 24px;
+      background-image: url("../img/icon-mail.svg");
+      background-size: 22px auto;
+      background-position: center;
     }
   }
 
@@ -387,8 +388,8 @@
     margin-right: 64px;
 
     &::before {
-      top: 51px;
-      right: 60px;
+      top: 0;
+      right: 56px;
     }
   }
 }
@@ -407,28 +408,6 @@
   margin: 0;
   margin-bottom: 36px;
   margin-left: 11px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: 9px;
-    width: 38px;
-    height: 38px;
-    border: 1px solid #cccccc;
-    border-radius: 50%;
-    background-color: $white-color;
-
-
-    @media (min-width: $tablet-width) {
-      top: -4px;
-      left: 58px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 75px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     margin-top: 42px;
@@ -450,6 +429,7 @@
   color: $pink-color;
   padding-bottom: 10px;
 
+
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0 23px 14px 0;
@@ -458,25 +438,69 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
-    padding-right: 20px;
+    padding-right: 23px;
   }
 }
 
 .contest-form__label--achievements,
 .contest-form__label--app {
+  position: relative;
   padding-left: 108px;
   padding-right: 0;
   font-size: 18px;
   line-height: 30px;
   text-transform: none;
   color: $dark-blue-color;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 39px;
+    height: 39px;
+    background-color: $white-color;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    border-color: $dark-blue-color;
+  }
+
+  &:active::before,
+  &:checked::before {
+    border-color: $pink-color;
+  }
 }
 
 .contest-form__label--app {
   padding-left: 79px;
 
+  &::before {
+    top: -4px;
+    left: 8px;
+
+    @media (min-width: $tablet-width) {
+      top: -6px;
+      left: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 76px;
+    }
+  }
+
+  &::after {
+    top: 9px;
+    left: 70px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 117px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -488,6 +512,17 @@
 
 .contest-form__label--achievements {
   padding-left: 80px;
+
+  &::before {
+    top: -6px;
+    left: 10px;
+    border-radius: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: -6px;
+      left: -59px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -517,6 +552,9 @@
   padding-bottom: 14px;
   padding-left: 20px;
   padding-right: 10px;
+
+  @include open-sans-regular();
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -541,7 +579,7 @@
     padding: 0;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 24px;
+    padding-left: 20px;
     padding-right: 15px;
   }
 }
@@ -553,7 +591,35 @@
 
 .contest-form__input--achievements,
 .contest-form__input--app {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+}
+
+.contest-form__input--app {
+  top: -3px;
+  left: 9px;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+    left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 76px;
+  }
+}
+
+.contest-form__input--achievements {
+  top: -3px;
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: -3px;
+    left: -59px;
+  }
 }
 
 .contest-form__input--address {
@@ -561,7 +627,7 @@
     position: relative;
     width: 438px;
     margin: 0;
-    padding: 15px 60px 15px 20px;
+    padding: 15px 60px 15px 18px;
     border: 2px solid #e5e5e5;
   }
 
@@ -569,8 +635,51 @@
     width: 100%;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 24px;
+    padding-left: 18px;
     padding-right: 15px;
+  }
+}
+
+.contest-form__input:checked + .contest-form__label::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink-color;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
+    left: 88px;
+  }
+}
+
+.contest-form__input--achievements:checked + .contest-form__label--achievements::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 19px;
+  width: 26px;
+  height: 23px;
+  background: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 22px 23px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: -50px;
   }
 }
 
@@ -585,7 +694,11 @@
     top: 0;
     width: auto;
     padding: 0 30px;
-    margin-bottom: 50px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
   }
 }
 
@@ -598,16 +711,18 @@
     width: 440px;
     top: 8px;
     margin: 0;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-bottom: 53px;
   }
 }
 
 .contest-form__headline--textarea {
-  padding-bottom: 14px;
+  padding-top: 37px;
+  padding-bottom: 10px;
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
@@ -625,7 +740,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -670,11 +785,11 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     min-height: 190px;
-    padding: 20px;
-    padding-top: 12px;
+    padding: 19px;
+    padding-top: 14px;
     margin: 24px;
     margin-bottom: 46px;
-    margin-top: 39px;
+    margin-top: 37px;
   }
 
   @media (min-width: $desktop-width) {

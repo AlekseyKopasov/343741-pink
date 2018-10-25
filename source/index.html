@@ -10,18 +10,17 @@
   <body class="page">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="logo main-header__logo">
-          <svg class="logo__pink" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75" height="22" viewBox="0 0 75 22" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-            <g>
-              <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-              <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-              <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-              <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-            </g>
-          </svg>
+        <a class="main-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-header__logo-pink" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
         </a>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle" title="Главное меню"></button>
+          <button class="main-navigation__toggle main-navigation__toggle--active" title="Главное меню">
+            <span class="main-navigation__cross"></span>
+          </button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item main-navigation__item--current">
               <a class="main-navigation__item-link">Главная</a>
@@ -42,32 +41,34 @@
 
     <main class="main-content">
       <section class="download-app">
-        <h2 class="download-app__headline visually-hidden">Скачать приложение</h2>
-        <div class="download-app__intro">
-          <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
+        <div class="download-app__inner">
+          <h2 class="download-app__headline visually-hidden">Скачать приложение</h2>
+          <div class="download-app__intro">
+            <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
+          </div>
+                <div class="download-app__wrappers">
+          <h2 class="download-app__slogan">Взгляните на жизнь иначе!</h2>
+          <button class="download-app__button">Скачать приложение</button>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--apple" href="https://itunes.apple.com" target="_blank">
+                <span class="visually-hidden">Скачать приложение в iTunes</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps?hl=ru" target="_blank">
+                <span class="visually-hidden">Скачать приложение в Google Play</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--microsoft" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank">
+                <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
         </div>
-      <div class="download-app__wrappers">
-        <h2 class="download-app__slogan">Взгляните на жизнь иначе!</h2>
-        <button class="download-app__button">Скачать приложение</button>
-        <ul class="download-app__list">
-          <li class="download-app__item">
-            <a class="download-app__link download-app__link--apple" href="https://itunes.apple.com" target="_blank">
-              <span class="visually-hidden">Скачать приложение в iTunes</span>
-            </a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps?hl=ru" target="_blank">
-              <span class="visually-hidden">Скачать приложение в Google Play</span>
-            </a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__link download-app__link--microsoft" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank">
-              <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
       </section>
 
       <section class="advantages">
@@ -92,10 +93,12 @@
       </section>
 
       <section class="research">
-        <div class="research__wrapper">
-          <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
-          <p class="research__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        <div class="research__inner">
+          <div class="research__wrapper">
+            <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
+            <p class="research__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
@@ -137,8 +140,8 @@
             <button class="feedback-slider__indicator" aria-label="Третий отзыв"></button>
           </li>
         </ul>
-        <button class="feedback-slider__button feedback-slider__button--next"  aria-label="Следующий отзыв"></button>
-        <button class="feedback-slider__button feedback-slider__button--prev"  aria-label="Предыдущий отзыв отзыв"></button>
+        <button class="feedback-slider__button feedback-slider__button--prev"  aria-label="Следующий отзыв"></button>
+        <button class="feedback-slider__button feedback-slider__button--next"  aria-label="Предыдущий отзыв отзыв"></button>
       </section>
 
       <section class="price-table">
@@ -239,14 +242,13 @@
             <a class="contacts__text">ул. Большая Конюшенная, 19/8</a>
           </div>
         </div>
-      </div>
       </section>
 
       <footer class="page-footer">
         <div class="page-footer__map"></div>
         <div class="page-footer__inner page-footer__inner--hidden">
-          <a class="logo__pink page-footer__logo" href="index.html">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <a class="page-footer__logo" href="index.html">
+            <svg class="page-footer__logo-pink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -300,5 +302,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="js/lib/picturefill.min.js"></script>
   </body>
 </html>

@@ -1,17 +1,25 @@
 .modal {
   display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 99;
   background-color: $white-color;
   width: 320px;
   text-align: center;
-  box-shadow: 0 0 15px -5px #000000,
-    0 5px 5px -5px #000000;
+  box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.15),
+    0 0 15px 7px rgba(0, 0, 0, 0.15);
 
   @media (min-width: $tablet-width) {
     width: 460px;
+    left: 50%;
+    margin-left: -230px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 780px;
+    margin-left: -390px;
   }
 }
 
@@ -26,18 +34,58 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__description {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 165px;
+    padding-bottom: 60px;
+  }
 }
 
 .modal__footer {
   width: 320px;
   padding: 50px 22px;
   background-color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: $white-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: $grey-color;
+  }
+}
+
+.modal__footer--success {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 50px 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: $grey-color;
+  }
 }
 
 .modal__success-button,
@@ -54,4 +102,10 @@
   background-color: #2aab6d;
   border-radius: 3px;
   border: none;
+}
+
+.modal__failure-button {
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }

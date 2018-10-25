@@ -1,53 +1,97 @@
 .main-navigation {
+  width: 320px;
   display: flex;
   justify-content: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 620px;
-    margin-right: 20px;
+    width: 643px;
+    margin-right: 10px;
   }
 }
 
 .main-navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 160px;
   width: 22px;
   height: 22px;
-  position: absolute;
-  top: -22px;
-  right: 20px;
   border: none;
   background: transparent;
+  outline: 0;
+
+  @media (min-width: $tablet-width) {
+    right: 330px;
+  }
+}
+
+.main-navigation__cross {
+  display: block;
+  position: relative;
+  top: -49px;
+  right: -145px;
+  height: 5px;
+  width: 30px;
+  background-color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    top: -67px;
+    right: -315px;
+  }
 
   &::after,
   &::before {
     content: "";
-    position: absolute;
-    top: -18px;
-    right: -4px;
     height: 5px;
     width: 30px;
+    position: absolute;
+    left: 0;
     cursor: pointer;
     background-color: $white-color;
   }
 
   &::after {
-    transform: rotate(45deg);
+    top: 10px;
   }
 
   &::before {
+    top: -10px;
+  }
+
+  &:hover,
+  &:hover::after,
+  &:hover::before {
+    background-color: $pink-color;
+  }
+
+  &:active,
+  &:active::after,
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__toggle--active {
+  .main-navigation__cross {
+    width: 0;
+  }
+
+  .main-navigation__cross::after {
+    transform: rotate(45deg);
+    width: 28px;
+    left: -14px;
+    top: 1px;
+  }
+
+  .main-navigation__cross::before {
     transform: rotate(-45deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    top: -38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
+    width: 28px;
+    left: -14px;
+    top: 1px;
   }
 }
 
@@ -65,6 +109,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0;
+    padding-left: 22px;
   }
 }
 
@@ -111,6 +156,8 @@
     line-height: 18px;
     text-transform: none;
     box-shadow: none;
+    padding-top: 6px;
+    padding-bottom: 10px;
 
     &:active {
       color: $white-color;

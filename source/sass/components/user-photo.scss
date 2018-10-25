@@ -1,11 +1,11 @@
 .user-photo {
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 66px;
+    margin-bottom: 44px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,13 +14,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 6px;
   }
 }
 
 .user-photo__headline {
   margin: 0 auto;
-  padding: 45px 35px 48px;
+  padding: 44px 35px 48px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -37,9 +37,9 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    padding-left: 205px;
+    padding-left: 180px;
     padding-right: 180px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 }
 
@@ -60,19 +60,24 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    min-height: 450px;
     margin: 0 10px;
     margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    min-height: 555px;
+    margin-bottom: 54px;
   }
 }
 
 .user-photo__image {
+  width: 280px;
+  height: 180px;
+
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 300px;
@@ -84,28 +89,9 @@
 }
 
 .user-photo__image--panorama {
+  width: 320px;
+  height: 137px;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    max-width: inherit;
-    left: 50%;
-    transform: translateX(-50%);
-    min-height: 510px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    min-height: 508px;
-  }
-}
-
-.user-photo__post--fresh {
-  position: relative;
-  max-width: 1200px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
 
   &::before {
     position: absolute;
@@ -117,6 +103,7 @@
 
     @include open-sans-bold();
 
+    font-size: 12px;
     line-height: 36px;
     color: $white-color;
     text-transform: uppercase;
@@ -129,9 +116,28 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 10px;
+      top: 54px;
+      left: 931px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: inherit;
+    min-height: 510px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    min-height: 508px;
+  }
+}
+
+.user-photo__post--fresh {
+  max-width: 1200px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -144,9 +150,12 @@
   background-color: $grey-color;
   padding-left: 18px;
   padding-bottom: 20px;
+  padding-top: 19px;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    padding-top: 0;
     padding-left: 27px;
     padding-right: 20px;
     display: flex;
@@ -156,11 +165,13 @@
 }
 
 .user-photo__content--panorama {
+  padding-top: 6px;
   flex-direction: row-reverse;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding-left: 28px;
+    padding-top: 10px;
     width: 620px;
   }
 
@@ -180,13 +191,18 @@
 }
 
 .user-photo__title {
-  padding-top: 25px;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 }
 
 .user-photo__title--fresh {
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
     order: 1;
     padding-top: 20px;
@@ -203,11 +219,25 @@
 
 .user-photo__message {
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .user-photo__message--fresh {
   order: 3;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-bottom: 5px;
+  }
 }
 
 .user-photo__button {
@@ -218,14 +248,18 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/icon-heart.svg");
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 11px;
+    margin-bottom: 7px;
   }
 }
 
@@ -233,6 +267,12 @@
   @media (min-width: $tablet-width) {
     margin-right: 8px;
     margin-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 1px;
+    margin-left: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -253,6 +293,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
   }
 }
 

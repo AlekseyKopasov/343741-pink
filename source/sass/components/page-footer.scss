@@ -21,10 +21,15 @@
   min-height: 200px;
   overflow: hidden;
   background-color: $white-color;
-  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center -445px;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -48,20 +53,37 @@
     border-radius: 50%;
     background-color: $pink-color;
     border: 10px solid $white-color;
+
+    @media (min-width: $tablet-width) {
+      top: 188px;
+      left: 312px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 386px;
-    background-image: url("../../img/bg-map-tablet@1x.jpg");
-    background-position: center -391px;
+    margin-bottom: 26px;
+    min-height: 370px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center -350px;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 505px;
-    margin-bottom: 0;
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    min-height: 515px;
+    margin-bottom: 70px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: center -317px;
-    background-size: cover;
+    background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 }
 
@@ -73,23 +95,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 43px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 640px;
-    padding-top: 44px;
-    padding-bottom: 44px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 40px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
-    margin-bottom: 67px;
-    padding: 37px 0;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -101,9 +123,15 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-pink {
   fill: $dark-blue-color;
   padding-bottom: 32px;
+  width: 146px;
+  height: 73px;
+
+  &:hover {
+    fill: $pink-color;
+  }
 
   &:active {
     fill: $dark-blue-color;
@@ -116,8 +144,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-top: -17px;
-    margin-right: auto;
+    margin-left: 10px;
   }
 }
 
@@ -127,17 +154,27 @@
   justify-content: space-between;
 
   @include list-reset();
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-left: 58px;
-    margin-right: 84px;
+    margin-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 14px;
+    padding-top: 10px;
+  }
+}
+
+.page-footer__social-item {
+  @media (min-width: $tablet-width) {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -173,17 +210,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 
 .page-footer__copyright-link {
+  position: relative;
+  top: 6px;
+
   @media (min-width: $tablet-width) {
     padding-top: 13px;
+    top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 15px;
+    top: 5px;
+    left: -10px;
+    margin-left: 23px;
   }
 }
 
@@ -193,6 +236,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 10px;
     font-size: 18px;
   }
 }
