@@ -3,7 +3,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 320px auto;
+  background-size: 100% auto;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -13,7 +13,8 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: 100% auto;
+    background-position: top center;
+    background-size: 100% 392px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -61,7 +62,7 @@
     min-height: 354px;
     padding: 0;
     padding-top: 172px;
-    padding-left: 0; // добавил для формы
+    padding-left: 0;
     font-size: 50px;
     line-height: 60px;
   }

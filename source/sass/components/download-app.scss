@@ -61,7 +61,7 @@
 
 .download-app__intro {
   position: relative;
-  width: 320px;
+  // width: 320px;
   height: 396px;
   margin-bottom: auto;
 
@@ -69,11 +69,12 @@
     display: block;
     content: "";
     position: relative;
-    width: 320px;
+    width: 280px;
     height: 396px;
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
+    left: -21px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-size: 259px 288px;
     background-repeat: no-repeat;
@@ -86,13 +87,13 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      width: 650px;
+      width: 660px;
       height: 545px;
       bottom: -223px;
-      right: 10px;
-      z-index: 1;
+      left: -680px;
+      z-index: 2;
       background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-position: -20px bottom;
+      background-position: 0 0;
       background-size: 700px auto;
 
       @media (min-resolution: $retina-dpi),
@@ -102,10 +103,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 863px;
+      width: 890px;
       height: 660px;
-      bottom: 0;
-      right: 43px;
+      bottom: -13px;
+      left: -923px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-size: 1050px auto;
 

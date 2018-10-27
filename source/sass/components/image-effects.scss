@@ -59,6 +59,10 @@
   left: 0;
   fill: #b5b9be;
 
+  &:hover {
+    fill: #8d949b;
+  }
+
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
@@ -71,10 +75,14 @@
   }
 }
 
+.image-effects__icon--active,
+.image-effects__icon--active:hover {
+  fill: $pink-color;
+}
+
 .image-effects__icon--crop {
   top: 9px;
   left: -6px;
-  fill: $pink-color;
 
   @media (min-width: $tablet-width) {
     top: -1px;
@@ -93,6 +101,10 @@
   @media (min-width: $tablet-width) {
     top: 2px;
     left: 8px;
+
+    &:hover {
+      fill: $pink-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -110,6 +122,10 @@
     left: 12px;
     width: 18px;
     height: 18px;
+
+    &:hover {
+      fill: $pink-color;
+    }
   }
 
   @media (min-width: $desktop-width) {

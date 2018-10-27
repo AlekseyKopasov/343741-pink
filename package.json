@@ -39,6 +39,7 @@
     "node": "8.12"
   },
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "svgxuse": "^1.2.6"
   }
 }

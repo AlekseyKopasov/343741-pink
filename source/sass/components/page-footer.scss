@@ -55,8 +55,16 @@
     border: 10px solid $white-color;
 
     @media (min-width: $tablet-width) {
-      top: 188px;
-      left: 312px;
+      top: 191px;
+      left: 0;
+      margin-left: 312px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 0;
+      margin-top: 280px;
+      margin-left: 626px;
     }
   }
 
@@ -64,7 +72,7 @@
     margin-bottom: 26px;
     min-height: 370px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: center -350px;
+    background-position: center -320px;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi),
@@ -74,11 +82,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 515px;
-    margin-bottom: 70px;
+    min-height: 520px;
+    margin-bottom: 55px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: center -317px;
-    background-size: 1200px auto;
+    background-position: center -298px;
+    background-size: 100% auto;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -123,11 +131,13 @@
   }
 }
 
-.page-footer__logo-pink {
-  fill: $dark-blue-color;
+.page-footer__logo-blue {
+  display: none;
   padding-bottom: 32px;
   width: 146px;
   height: 73px;
+
+  fill: $dark-blue-color;
 
   &:hover {
     fill: $pink-color;
@@ -137,12 +147,23 @@
     fill: $dark-blue-color;
     opacity: 0.3;
   }
+}
+
+.page-footer__logo-blue--mobile {
+  display: block;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-blue--desktop {
+  @media (min-width: $desktop-width) {
+    display: block;
     padding: 0;
     margin-left: 10px;
   }
@@ -242,6 +263,8 @@
 }
 
 .page-footer__copyright-logo {
+  fill: $pink-color;
+
   &:hover {
     fill: $dark-blue-color;
   }

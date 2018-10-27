@@ -54,14 +54,15 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 113px;
     background-size: 298px auto;
-    background-position: 10px 52px;
+    background-position: 0 57px;
 
     &::after {
       width: 250px;
       height: 250px;
-      top: 124px;
-      left: 33px;
+      top: 128px;
+      left: 24px;
       font-size: 120px;
       line-height: 210px;
     }
@@ -96,8 +97,8 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    padding-top: 151px;
-    padding-bottom: 22px;
+    padding-top: 153px;
+    padding-bottom: 23px;
     line-height: 30px;
   }
 }
@@ -110,7 +111,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
     font-size: 18px;
     line-height: 30px;
   }

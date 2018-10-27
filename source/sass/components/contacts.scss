@@ -167,6 +167,7 @@
 .contacts__text {
   display: block;
   width: 235px;
+  cursor: pointer;
 
   @include open-sans-light();
 
@@ -183,6 +184,7 @@
 
   &:active {
     opacity: 0.3;
+    text-decoration: none;
   }
 }
 
