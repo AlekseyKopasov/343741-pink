@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк</title>
   </head>
 
@@ -22,7 +22,7 @@
           </svg>
         </a>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle main-navigation__toggle--active" title="Главное меню">
+          <button class="main-navigation__toggle" title="Главное меню">
             <span class="main-navigation__cross"></span>
           </button>
           <ul class="main-navigation__list">
@@ -36,7 +36,7 @@
               <a class="main-navigation__item-link">Конкурс</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__item-link"  href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-navigation__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -74,11 +74,11 @@
               <div class="contest-form__wrapper contest-form__wrapper--achievements">
                 <div class="contest-form__group">
                   <div class="contest-form__achievements">
-                    <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked>
+                    <input class="contest-form__input contest-form__input--achievements" id="selfie" type="checkbox" name="selfie" checked="">
                     <label class="contest-form__label contest-form__label--achievements" for="selfie">Сделал селфи с акулой</label>
                   </div>
                   <div class="contest-form__achievements">
-                    <input class="contest-form__input contest-form__input--achievements" id="sunburn" type="checkbox" checked>
+                    <input class="contest-form__input contest-form__input--achievements" id="sunburn" type="checkbox" checked="">
                     <label class="contest-form__label contest-form__label--achievements" for="sunburn">Обгорел на пляже</label>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="contest-form__group">
                   <div class="contest-form__achievements">
-                    <input class="contest-form__input contest-form__input--achievements" id="tower" type="checkbox" checked>
+                    <input class="contest-form__input contest-form__input--achievements" id="tower" type="checkbox" checked="">
                     <label class="contest-form__label contest-form__label--achievements" for="tower">Удержал башню</label>
                   </div>
                   <div class="contest-form__achievements">
@@ -113,8 +113,8 @@
               <input class="contest-form__input contest-form__input--address" id="user-contacts__phone" type="tel" placeholder="Номер, пожалуйста">
             </div>
             <div class="contest-form__wrapper  contest-form__wrapper--address contest-form__wrapper--mail">
-              <label class="contest-form__label contest-form__label--address"  for="user-contacts__mail">Адрес почты</label>
-              <input class="contest-form__input contest-form__input--address"  id="user-contacts__mail" type="email" placeholder="Введите почту *">
+              <label class="contest-form__label contest-form__label--address" for="user-contacts__mail">Адрес почты</label>
+              <input class="contest-form__input contest-form__input--address" id="user-contacts__mail" type="email" placeholder="Введите почту *">
             </div>
           </div>
           </fieldset>
@@ -123,8 +123,8 @@
             <legend class="contest-form__headline contest-form__headline--app">С каким приложением путешествовали?</legend>
             <div class="contest-form__inner-app">
               <div class="contest-form__wrapper contest-form__wrapper--app">
-                <input class="contest-form__input contest-form__input--app" id="user-app__ios" type="radio" name="user-app" checked>
-                <label class="contest-form__label contest-form__label--app"  for="user-app__ios">Pink для iOS</label>
+                <input class="contest-form__input contest-form__input--app" id="user-app__ios" type="radio" name="user-app" checked="">
+                <label class="contest-form__label contest-form__label--app" for="user-app__ios">Pink для iOS</label>
               </div>
               <div class="contest-form__wrapper contest-form__wrapper--app">
                 <input class="contest-form__input contest-form__input--app" id="user-app__android" type="radio" name="user-app">
@@ -165,23 +165,23 @@
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg width="18" height="14">
+              <svg width="18" height="14" fill="#d22856">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
-              <span class="visually-hidden">Fasebook</span>
-              <svg width="9" height="19">
-                <use xlink:href="img/sprite.svg#icon-fasebook"></use>
+              <span class="visually-hidden">Facebook</span>
+              <svg width="9" height="19" fill="#d22856">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">YouTube</span>
-              <svg width="15" height="14">
+              <svg width="15" height="14" fill="#d22856">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -215,7 +215,8 @@
       </div>
     </div>
 
-    <script defer src="js/lib/svgxuse.min.js"></script>
+    <script defer="" src="js/lib/svgxuse.min.js"></script>
     <script src="js/lib/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
   </html>

@@ -29,7 +29,6 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     min-width: 960px;
-    min-height: 853px;
     margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -61,7 +60,6 @@
 
 .download-app__intro {
   position: relative;
-  // width: 320px;
   height: 396px;
   margin-bottom: auto;
 
@@ -89,7 +87,7 @@
       position: absolute;
       width: 660px;
       height: 545px;
-      bottom: -223px;
+      bottom: -221px;
       left: -680px;
       z-index: 2;
       background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -122,7 +120,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 853px;
+    min-height: 846px;
   }
 }
 
@@ -135,7 +133,7 @@
   background-color: $dark-blue-color;
 
   @media (min-width: $tablet-width) {
-    min-height: 618px;
+    min-height: 617px;
     padding-left: 10px;
     align-items: flex-start;
     background-color: transparent;
@@ -167,8 +165,8 @@
 
   @media (min-width: $desktop-width) {
     width: 280px;
-    padding-top: 72px;
-    padding-bottom: 50px;
+    padding-top: 68px;
+    padding-bottom: 54px;
     padding-left: 0;
     font-size: 50px;
     line-height: 60px;
@@ -178,12 +176,15 @@
 .download-app__button {
   width: 280px;
   padding: 15px;
+  padding-left: 35px;
 
   @include open-sans-bold();
 
   font-size: 18px;
   line-height: 18px;
   color: $white-color;
+  text-decoration: none;
+  text-align: center;
   background: transparent;
   border: 3px solid $white-color;
   border-radius: 35px;
@@ -205,6 +206,7 @@
   @media (min-width: $desktop-width) {
     margin-left: -10px;
     margin-bottom: 71px;
+    padding: 15px;
     font-size: 21px;
     line-height: 18px;
   }

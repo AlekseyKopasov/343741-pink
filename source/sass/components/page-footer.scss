@@ -17,8 +17,8 @@
 .page-footer__map {
   position: relative;
   width: 100%;
-  height: 100%;
   min-height: 200px;
+  height: 200px;
   overflow: hidden;
   background-color: $white-color;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -34,37 +34,35 @@
   &::before {
     content: "";
     position: absolute;
-    top: -1px;
-    width: 100%;
+    top: -186px;
+    left: 0;
+    width: 50%;
+    transform: skewY(12deg);
     height: 100%;
-    background: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
+    z-index: 1;
+    background: $white-color;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 93px;
-    left: 143px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: $pink-color;
-    border: 10px solid $white-color;
+    top: -186px;
+    right: 0;
+    width: 50%;
+    transform: skewY(-12deg);
+    height: 100%;
+    z-index: 1;
+    background: $white-color;
+  }
 
+  &::before,
+  &::after {
     @media (min-width: $tablet-width) {
-      top: 191px;
-      left: 0;
-      margin-left: 312px;
+      height: 217px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
-      left: 0;
-      margin-top: 280px;
-      margin-left: 626px;
+      height: 267px;
     }
   }
 
@@ -83,6 +81,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 520px;
+    height: 520px;
     margin-bottom: 55px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: center -298px;
@@ -129,6 +128,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.page-footer__logo {
+  padding-bottom: 6px;
 }
 
 .page-footer__logo-blue {

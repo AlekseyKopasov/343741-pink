@@ -57,7 +57,7 @@
   margin: 0 auto;
   padding: 0;
   padding-bottom: 35px;
-  padding-top: 56px;
+  padding-top: 54px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -606,7 +606,7 @@
 }
 
 .contest-form__input--app {
-  top: -3px;
+  top: -4px;
   left: 9px;
 
   @media (min-width: $tablet-width) {
@@ -641,6 +641,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    min-height: 62px;
     min-width: 312px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -662,8 +663,8 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    top: 5px;
-    left: 71px;
+    top: 6px;
+    left: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -772,7 +773,6 @@
 .contest-form__text {
   max-width: 280px;
   min-width: 280px;
-  // width: 280px;
   min-height: 200px;
   padding: 14px 20px;
   border-width: 2px;
@@ -795,7 +795,6 @@
   @media (min-width: $tablet-width) {
     max-width: 500px;
     min-width: 500px;
-    // width: 500px;
     min-height: 192px;
     padding: 19px;
     padding-top: 14px;
@@ -807,7 +806,6 @@
   @media (min-width: $desktop-width) {
     max-width: 820px;
     min-width: 820px;
-    // width: 820px;
     min-height: 130px;
     margin: 0;
     margin-bottom: 33px;

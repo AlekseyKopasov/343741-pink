@@ -74,6 +74,11 @@
   }
 }
 
+.user-photo__image-link {
+  position: relative;
+  text-decoration: none;
+}
+
 .user-photo__image {
   width: 280px;
   height: 180px;
@@ -91,7 +96,6 @@
 .user-photo__image--panorama {
   width: 320px;
   height: 137px;
-  position: relative;
 
   &::before {
     position: absolute;
