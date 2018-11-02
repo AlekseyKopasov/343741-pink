@@ -49,6 +49,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    margin: 0 10px;
     justify-content: space-between;
   }
 
@@ -68,25 +69,16 @@
 
   @media (min-width: $tablet-width) {
     min-height: 450px;
-    margin: 0 20 15px; // тут поправить
     margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 555px;
+    margin: 0 auto;
     margin-bottom: 54px;
   }
 }
 
-// .user-photo__post:nth-child(even) {
-//   @media (min-width: $tablet-width) {
-//     margin-left: 0;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     margin-bottom: 54px;
-//   }
-// }
 
 .user-photo__image-link {
   position: relative;
