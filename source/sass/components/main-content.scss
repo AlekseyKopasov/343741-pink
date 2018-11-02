@@ -1,9 +1,9 @@
 .main-content__wrapper {
+  padding-top: 66px;
   background-color: $grey-blue-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+  background-position: center top;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -33,6 +33,11 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+}
+
+.main-content__wrapper--open-menu {
+  padding-top: 0;
+  background-position: center -70px;
 }
 
 .main-content__headline {

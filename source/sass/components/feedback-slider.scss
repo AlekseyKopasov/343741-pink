@@ -142,7 +142,11 @@
   justify-content: center;
 
   @include list-reset();
-  padding-bottom: 60px;
+  padding-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

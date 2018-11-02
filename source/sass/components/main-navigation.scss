@@ -12,16 +12,19 @@
 
 .main-navigation__toggle {
   position: absolute;
-  top: 0;
-  right: 160px;
-  width: 22px;
-  height: 22px;
-  border: none;
-  background: transparent;
+  top: -45px;
+  right: 18px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
   outline: 0;
 
   @media (min-width: $tablet-width) {
-    right: 330px;
+    top: -66px;
+    right: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,12 +34,10 @@
 
 .main-navigation__cross {
   display: block;
-  position: relative;
-  top: -49px;
-  right: -145px;
-  height: 5px;
-  width: 30px;
+  width: 50px;
+  height: 4px;
   background-color: $white-color;
+  border-radius: 1px;
 
   @media (min-width: $tablet-width) {
     top: -67px;
@@ -46,20 +47,22 @@
   &::after,
   &::before {
     content: "";
-    height: 5px;
-    width: 30px;
     position: absolute;
     left: 0;
-    cursor: pointer;
+    width: 50px;
+    height: 4px;
     background-color: $white-color;
+    border-radius: 1px;
   }
 
   &::after {
-    top: 10px;
+    top: 0;
+    transition-property: bottom, transform;
   }
 
   &::before {
-    top: -10px;
+    bottom: 0;
+    transition-property: top, transform;
   }
 
   &:hover,
@@ -82,21 +85,51 @@
   }
 
   .main-navigation__cross::after {
-    transform: rotate(45deg);
-    width: 28px;
-    left: -14px;
-    top: 1px;
+    top: 6px;
+    left: 21px;
+    transform: rotate(-45deg);
+    width: 29px;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 32px;
+    }
   }
 
   .main-navigation__cross::before {
-    transform: rotate(-45deg);
-    width: 28px;
-    left: -14px;
-    top: 1px;
+    top: 6px;
+    left: 21px;
+    transform: rotate(45deg);
+    width: 29px;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 32px;
+    }
+  }
+
+  &::after,
+  &::before {
+    transition-delay: 0s, 0.3s;
   }
 }
 
 .main-navigation__list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include list-reset();
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0;
+    padding-left: 22px;
+  }
+}
+
+.main-navigation__list--open {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +186,7 @@
     line-height: 18px;
     text-transform: none;
     box-shadow: none;
-    padding-top: 6px;
+    padding-top: 0;
     padding-bottom: 10px;
 
     &:active {

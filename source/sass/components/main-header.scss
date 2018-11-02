@@ -1,10 +1,12 @@
 .main-header {
-  margin: 0 auto;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
   color: $white-color;
-  background-color: $grey-blue-color;
+  width: 100%;
+  z-index: 99;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -16,6 +18,15 @@
     left: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.main-header--open {
+  position: relative;
+  background-color: $grey-blue-color;
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
