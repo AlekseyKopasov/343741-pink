@@ -175,8 +175,8 @@
 
 .download-app__button {
   width: 280px;
-  padding: 15px;
-  padding-left: 35px;
+  padding: 15px 35px;
+  // padding-left: 35px;
 
   @include open-sans-bold();
 

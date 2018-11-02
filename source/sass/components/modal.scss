@@ -88,8 +88,8 @@
   }
 }
 
-.modal__success-button,
-.modal__failure-button {
+.modal__button--success,
+.modal__button--failure {
   width: 100%;
   padding: 16px 47px;
 
@@ -104,8 +104,13 @@
   border: none;
 }
 
-.modal__failure-button {
+.modal__button--failure {
   @media (min-width: $desktop-width) {
     width: 300px;
   }
+}
+
+.modal--success-active,
+.modal--failure-active {
+  display: block;
 }

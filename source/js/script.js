@@ -1,40 +1,46 @@
-var navList = document.querySelector('.main-navigation__list');
+//Variables menu
 var mainHeader = document.querySelector('.main-header');
+var navToggle = document.querySelector('.main-navigation__toggle');
+var navList = document.querySelector('.main-navigation__list');
 var map = document.querySelector('#map');
 var introImage = document.querySelector('.main-content__wrapper');
 
-(function() {
-  var toggles = document.querySelectorAll('.main-navigation__toggle');
-  var mainHeader = document.querySelector('.main-header');
+//Variables form
+var modal = document.querySelector('.modal');
+var modalSuccess = document.querySelector('.modal--success');
+var modalFailure = document.querySelector('.modal--failure');
+var modalClose = document.querySelector('.modal__button');
+var form = document.querySelector('.contest-form');
+var buttonForm = document.querySelector('.contest-form__button');
+var lastName = document.querySelector('#last-name');
+var firstName = document.querySelector('#first-name');
+var userMail = document.querySelector('#user-contacts__mail');
+var modalSuccess = document.querySelector('.modal--success');
+var isStorageSupport = true;
+var storageUserName = '';
 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  };
-  function toggleHandler(toggle) {
-    toggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      (this.classList.contains('main-navigation__toggle--active') === true) ? this.classList.remove('main-navigation__toggle--active') : this.classList.add('main-navigation__toggle--active');
-
-      if (mainHeader.classList.contains('main-header--open')) {
-          mainHeader.classList.remove('main-header--open');
-      } else {
-          mainHeader.classList.add('main-header--open');
-      }
-      if (navList.classList.contains('main-navigation__list--open')) {
-        navList.classList.remove('main-navigation__list--open');
-      } else {
-          navList.classList.add('main-navigation__list--open');
-      }
-      if (introImage.classList.contains('main-content__wrapper--open-menu')) {
+//===Menu===
+mainHeader.classList.remove('main-header--open');
+navToggle.classList.remove('main-navigation__toggle--active');
+navList.classList.remove('main-navigation__list--open');
+navToggle.addEventListener('click', function() {
+  if (mainHeader.classList.contains('main-header--open')) {
+      mainHeader.classList.remove('main-header--open');        navToggle.classList.remove('main-navigation__toggle--active');
+      navList.classList.remove('main-navigation__list--open');
+      if (introImage) {
         introImage.classList.remove('main-content__wrapper--open-menu');
-      } else {
-          introImage.classList.add('main-content__wrapper--open-menu');
       }
-    });
-  }
-})();
+    } else {
+      mainHeader.classList.add('main-header--open');
+      navToggle.classList.add('main-navigation__toggle--active');
+      navList.classList.add('main-navigation__list--open');
+      if (introImage) {
+        introImage.classList.add('main-content__wrapper--open-menu');
+      }
+    }
+  });
 
+//===Map===
 if (map) {
   ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
@@ -55,7 +61,7 @@ if (map) {
     balloonContent: ''
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../img//icon-map-marker.svg',
+    iconImageHref: '../img/icon-map-marker.svg',
     // Размеры метки.
     iconImageSize: [36, 36],
     iconImageOffset: [-18, -9]

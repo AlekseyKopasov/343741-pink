@@ -14,6 +14,7 @@ var postHtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var server = require('browser-sync').create();
 
 // Конвертация препроцессорного кода и минификация CSS
@@ -33,10 +34,17 @@ gulp.task('css', function () {
 
 // Минификация JS-скриптов
 gulp.task('script', function () {
-  return gulp.src('source/js/**/*.js')
+  return gulp.src('source/js/*.js')
   .pipe(uglify())
   .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'));
+});
+
+// Минификация HTML
+gulp.task('minifyHtml', () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 });
 
 // Минификация изображений
@@ -117,7 +125,7 @@ gulp.task('refresh', function (done) {
 });
 
 // Сборка проекта
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'script'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'minifyHtml', 'script'));
 
 // Запуск локального сервера и сборка проекта
 gulp.task('start', gulp.series('build', 'server'));
