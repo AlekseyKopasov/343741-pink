@@ -12,19 +12,27 @@
 
 .main-navigation__toggle {
   position: absolute;
-  top: -45px;
+  top: -49px;
   right: 18px;
   width: 50px;
   height: 24px;
   padding: 0;
   background-color: transparent;
+  background-image: url("../img/icon-menu-burger.svg");
   border: 0;
   cursor: pointer;
-  outline: 0;
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     top: -66px;
-    right: 26px;
+    right: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,85 +40,17 @@
   }
 }
 
-.main-navigation__cross {
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: $white-color;
-  border-radius: 1px;
-
-  @media (min-width: $tablet-width) {
-    top: -67px;
-    right: -315px;
-  }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    background-color: $white-color;
-    border-radius: 1px;
-  }
-
-  &::after {
-    top: 0;
-    transition-property: bottom, transform;
-  }
-
-  &::before {
-    bottom: 0;
-    transition-property: top, transform;
-  }
-
-  &:hover,
-  &:hover::after,
-  &:hover::before {
-    background-color: $pink-color;
-  }
-
-  &:active,
-  &:active::after,
-  &:active::before {
-    background-color: $pink-color;
-    opacity: 0.3;
-  }
-}
-
 .main-navigation__toggle--active {
-  .main-navigation__cross {
-    width: 0;
+  width: 24px;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/icon-menu-cross-hover.svg");
   }
 
-  .main-navigation__cross::after {
-    top: 6px;
-    left: 21px;
-    transform: rotate(-45deg);
-    width: 29px;
-
-    @media (min-width: $tablet-width) {
-      top: 11px;
-      left: 32px;
-    }
-  }
-
-  .main-navigation__cross::before {
-    top: 6px;
-    left: 21px;
-    transform: rotate(45deg);
-    width: 29px;
-
-    @media (min-width: $tablet-width) {
-      top: 11px;
-      left: 32px;
-    }
-  }
-
-  &::after,
-  &::before {
-    transition-delay: 0s, 0.3s;
+  &:active {
+    opacity: 0.3;
   }
 }
 

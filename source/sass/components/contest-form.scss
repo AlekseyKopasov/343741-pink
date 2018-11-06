@@ -40,7 +40,7 @@
 .contest-form__headline {
   width: 240px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 0;
   padding: 0;
   padding-top: 34px;
   padding-bottom: 43px;
@@ -190,11 +190,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 250px;
+    width: 260px;
     padding: 29px 0 43px;
     padding-bottom: 44px;
     position: relative;
-    top: 4px;
+    top: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -338,6 +338,7 @@
 
   @media (min-width: $tablet-width) {
     width: 440px;
+    padding-top: 0;
     margin: 0;
     margin-left: 59px;
     flex-direction: column;

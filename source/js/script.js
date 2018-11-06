@@ -25,7 +25,8 @@ navToggle.classList.remove('main-navigation__toggle--active');
 navList.classList.remove('main-navigation__list--open');
 navToggle.addEventListener('click', function() {
   if (mainHeader.classList.contains('main-header--open')) {
-      mainHeader.classList.remove('main-header--open');        navToggle.classList.remove('main-navigation__toggle--active');
+      mainHeader.classList.remove('main-header--open');
+      navToggle.classList.remove('main-navigation__toggle--active');
       navList.classList.remove('main-navigation__list--open');
       if (introImage) {
         introImage.classList.remove('main-content__wrapper--open-menu');
@@ -43,30 +44,28 @@ navToggle.addEventListener('click', function() {
 //===Map===
 if (map) {
   ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
-      center: [59.9365,30.32104],
+    var myMap = new ymaps.Map('map', {
+      center: [59.9363,30.32104],
       zoom: 16,
       controls: []
-    },{
-      suppressMapOpenBlock: true
-    },{
-      searchControlProvider: 'yandex#search'
-    }),
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div>$[properties.iconContent]</div>'
-    ),
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+  },{
+    suppressMapOpenBlock: true
+  },{
+    searchControlProvider: 'yandex#search'
+  });
+  // Создаём макет содержимого.
+  var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    '<div>$[properties.iconContent]</div>');
+  var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
     hintContent: '',
     balloonContent: ''
-  }, {
+}, {
     iconLayout: 'default#image',
     iconImageHref: '../img/icon-map-marker.svg',
     // Размеры метки.
     iconImageSize: [36, 36],
-    iconImageOffset: [-18, -9]
+    iconImageOffset: [-17, -14]
   });
-  myMap.geoObjects
   myMap.geoObjects.add(myPlacemark);
   myMap.controls.remove('rulerControl');
   myMap.controls.remove('searchControl');

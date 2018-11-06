@@ -24,7 +24,6 @@
         </a>
         <nav class="main-navigation">
           <button class="main-navigation__toggle main-navigation__toggle--active" title="Главное меню">
-            <span class="main-navigation__cross"></span>
           </button>
           <ul class="main-navigation__list main-navigation__list--open">
             <li class="main-navigation__item">
@@ -37,7 +36,7 @@
               <a class="main-navigation__item-link">Конкурс</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-navigation__item-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -51,9 +50,9 @@
 
       <form class="contest-form" action="https://echo.htmlacademy.ru">
         <div class="contest-form__wrapper-form">
-            <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную карту!
-          <span class="contest-form__headline contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
-                </h2>
+          <h2 class="contest-form__headline contest-form__headline--main">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную карту!
+            <span class="contest-form__headline contest-form__headline--main-hidden">Пожалуйста, заполните форму ниже:</span>
+          </h2>
           <fieldset class="contest-form__field contest-form__field--contacts">
             <legend class="visually-hidden">Персональные данные</legend>
             <div class="contest-form__wrapper">
@@ -70,7 +69,7 @@
             </div>
           </fieldset>
 
-            <fieldset class="contest-form__field contest-form__field--achievements">
+          <fieldset class="contest-form__field contest-form__field--achievements">
               <legend class="contest-form__headline contest-form__headline--achievements">Ваши безбашенные достижения в путешествии</legend>
               <div class="contest-form__wrapper contest-form__wrapper--achievements">
                 <div class="contest-form__group">
@@ -108,16 +107,16 @@
 
           <fieldset class="contest-form__field contest-form__field--address">
             <legend class="contest-form__headline contest-form__headline--address">Контактная информация</legend>
-          <div class="contest-form__inner">
+            <div class="contest-form__inner">
               <div class="contest-form__wrapper contest-form__wrapper--address contest-form__wrapper--phone">
               <label class="contest-form__label contest-form__label--address" for="user-contacts__phone">Номер телефона</label>
               <input class="contest-form__input contest-form__input--address" id="user-contacts__phone" type="tel" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="contest-form__wrapper  contest-form__wrapper--address contest-form__wrapper--mail">
+                <label class="contest-form__label contest-form__label--address" for="user-contacts__mail">Адрес почты</label>
+                <input class="contest-form__input contest-form__input--address" id="user-contacts__mail" type="email" placeholder="Введите почту *" required>
+              </div>
             </div>
-            <div class="contest-form__wrapper  contest-form__wrapper--address contest-form__wrapper--mail">
-              <label class="contest-form__label contest-form__label--address" for="user-contacts__mail">Адрес почты</label>
-              <input class="contest-form__input contest-form__input--address" id="user-contacts__mail" type="email" placeholder="Введите почту *" required>
-            </div>
-          </div>
           </fieldset>
 
           <fieldset class="contest-form__field contest-form__field--app">
@@ -152,7 +151,6 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__map page-footer__map--hidden"></div>
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__logo-blue page-footer__logo-blue--mobile" width="147" height="40">
