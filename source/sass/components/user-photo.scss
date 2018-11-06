@@ -124,7 +124,7 @@
 
     @media (min-width: $tablet-width) {
       top: 57px;
-      right: 23px;
+      right: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -312,7 +312,7 @@
   }
 }
 
-.user-photo__raiting-count {
+.user-photo__rating-count {
   font-size: 12px;
   color: $pink-color;
   text-transform: uppercase;
