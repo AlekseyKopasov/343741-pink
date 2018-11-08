@@ -207,7 +207,7 @@
 
 .contest-form__field--app {
   width: 100%;
-  margin-top: 43px;
+  margin-top: -65px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -264,11 +264,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 820px;
-    margin: 0 auto;
-    padding-left: 50px;
+    width: 100%;
+    padding-left: 106px;
+    padding-right: 8px;
     padding-bottom: 11px;
+    margin: 0 auto;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.contest-form__group {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 52px;
   }
 }
 
@@ -695,9 +705,9 @@
 
 .contest-form__headline--app {
   position: relative;
-  top: 56px;
-  padding: 0;
-  margin-bottom: 94px;
+  top: 43px;
+  margin-bottom: -10px;
+  padding: 122px 0 90px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -777,8 +787,7 @@
   min-width: 280px;
   min-height: 200px;
   padding: 14px 20px;
-  border-width: 2px;
-
+  border: 2px solid #e5e5e5;
 
   @include open-sans-regular();
 

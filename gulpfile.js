@@ -41,9 +41,12 @@ gulp.task('script', function () {
 });
 
 // Минификация HTML
-gulp.task('minifyHtml', () => {
+gulp.task('minifyHtml', function () {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename( {
+      suffix: ".min",
+    }))
     .pipe(gulp.dest('build'));
 });
 

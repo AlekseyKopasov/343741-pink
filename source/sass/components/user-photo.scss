@@ -104,35 +104,6 @@
   width: 320px;
   height: 137px;
 
-  &::before {
-    position: absolute;
-    content: "Панорама дня";
-    width: 140px;
-    height: 36px;
-    top: 0;
-    right: 20px;
-
-    @include open-sans-bold();
-
-    font-size: 12px;
-    line-height: 36px;
-    color: $white-color;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: $pink-color;
-    z-index: 2;
-
-    @media (min-width: $tablet-width) {
-      top: 57px;
-      right: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 54px;
-      left: 931px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: inherit;
@@ -142,6 +113,35 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     min-height: 508px;
+  }
+}
+
+.user-photo__image-flag {
+  position: absolute;
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 20px;
+
+  @include open-sans-bold();
+
+  font-size: 12px;
+  line-height: 36px;
+  color: $white-color;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $pink-color;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    left: 931px;
   }
 }
 

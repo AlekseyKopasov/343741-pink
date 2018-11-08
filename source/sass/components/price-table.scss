@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 42px;
     margin-bottom: 48px;
   }
 
@@ -45,9 +45,9 @@
 .price-table__wrapper {
   width: 100%;
   min-width: 265px;
-  padding: 0 20px;
+  padding: 0;
   padding-bottom: 36px;
-  overflow: hidden;
+  overflow-x: scroll;
 
   background-size: 100% auto;
 
@@ -65,10 +65,8 @@
 }
 
 .price-table__table {
-  width: 300.5%;
+  width: 960px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
