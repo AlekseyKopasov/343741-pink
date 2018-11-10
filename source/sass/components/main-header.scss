@@ -46,7 +46,7 @@
 .main-header__logo {
   display: inline-block;
   vertical-align: top;
-  margin-top: 14px;
+  margin-top: 21px;
   margin-bottom: 26px;
   margin-left: 20px;
   margin-right: auto;
@@ -54,11 +54,12 @@
   fill: $white-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 26px;
     margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 20px;
     margin-left: 10px;
   }
 }
