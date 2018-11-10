@@ -5,20 +5,6 @@ var navList = document.querySelector('.main-navigation__list');
 var map = document.querySelector('#map');
 var introImage = document.querySelector('.main-content__wrapper');
 
-//Variables form
-var modal = document.querySelector('.modal');
-var modalSuccess = document.querySelector('.modal--success');
-var modalFailure = document.querySelector('.modal--failure');
-var modalClose = document.querySelector('.modal__button');
-var form = document.querySelector('.contest-form');
-var buttonForm = document.querySelector('.contest-form__button');
-var lastName = document.querySelector('#last-name');
-var firstName = document.querySelector('#first-name');
-var userMail = document.querySelector('#user-contacts__mail');
-var modalSuccess = document.querySelector('.modal--success');
-var isStorageSupport = true;
-var storageUserName = '';
-
 //===Menu===
 mainHeader.classList.remove('main-header--open');
 navToggle.classList.remove('main-navigation__toggle--active');
